@@ -1,3 +1,32 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  font-family: "Rubik", sans-serif;
+}
+.headingtop {
+  height: 60px;
+  background-color: #099d8d;
+  color: white;
+  text-align: center;
+}
+.namegroup {
+  height: 30px;
+  font-family: "Rubik", sans-serif;
+}
+.menu {
+  height: 421px;
+  background-color: #14d9c4;
+}
+.menuoptions {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 15px;
+  color: white;
+}
+
 /* MARCJANNA START */
 
 /* TEMPORARY until we decide on reset and wrapping */
