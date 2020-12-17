@@ -1,6 +1,7 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+/* HEADER-TITLE*/
 .header {
   font-family: rubik;
 }
@@ -12,8 +13,10 @@
 .namegroup {
   font: rubik;
 }
+/* HEADER-TITLE*/
 .menu {
   background-color: #14d9c4;
+  box-sizing: ;
 }
 .menuoptions {
   display: flex;
