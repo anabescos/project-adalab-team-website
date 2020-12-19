@@ -46,6 +46,45 @@
 
 /* MARCJANNA START */
 
+/* HERO */
+
+.hero {
+  width: 100%;
+  /* min-width remove after reset? */
+  min-width: 320px;
+  margin-bottom: -30px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 421px;
+  background-image: url(../images/284.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -105px;
+  left: 0;
+  z-index: -10;
+}
+
+.lema {
+  color: black;
+  background-color: #ffffff;
+  width: calc(100% - 30px);
+  height: 80px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.39;
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  transform: translate(0, 50%);
+  z-index: 10;
+}
+
 /* FOOTER */
 
 .footer {
