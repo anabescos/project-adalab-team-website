@@ -44,6 +44,18 @@
   color: white;
 }
 
+/* TEAM AND DESCRiPTION*/
+
+.main-container {
+  box-sizing: border-box;
+  border: #54585a;
+  background-color: white;
+}
+
+.equipo-title {
+  color: blue-green #099d8d;
+}
+
 /* MARCJANNA START */
 
 /* HERO */
