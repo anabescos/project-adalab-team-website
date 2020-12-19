@@ -1,8 +1,31 @@
-* {
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  padding: 0px;
+:root {
+  /* colors */
+  --brandColorDark: #099d8d;
+  --brandColorLight: #14d9c4;
+  --fontColorDark: #54585a;
+  --fontColorLight: #b8b8b9;
+  --brandBackgroundColor: #f1f1f1;
+
+  /* fonts */
+  --mainFont: "Open Sans", sans-serif;
+  --secondaryFont: "Rubik", sans-serif;
+
+  /* font-size: */
+  --fontSmall: 14px;
+  --fontMainText: 16px;
+  --fontTitle: 24px;
+  --fontSubtitle: 22px;
 }
+
+* {
+  /* font-family: "Open Sans", sans-serif; */
+  color: var(--fontColorDark);
+}
+
+/* header, main, section, footer {
+  min-width: 320px;
+} */
+
 /* HEADER-TITLE*/
 
 .header {
