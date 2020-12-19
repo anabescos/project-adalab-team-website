@@ -82,35 +82,87 @@
 }
 
 .teamContainer {
-  box-sizing: border-box;
-  height: 150px;
+  position: relative;
+  height: 400px;
   background-color: white;
-  content: center;
+  justify-content: center;
 }
 
 #equipoTitle {
   text-align: center;
-  color: #099d8d;
+  color: var(--brandColorLight);
+  font-size: 24px;
+  font-family: var(--secondaryFont);
 }
-
-.teamdescription {
+.teamText {
+  justify-content: center;
+  padding: 30px 30px 0;
+  height: 192px;
+  margin: 15px 0 0;
+  font-family: var(--mainFont);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
   text-align: center;
 }
+.cuadrado {
+  box-sizing: border-box;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 0;
+  background-color: white;
+}
+
 .power {
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
-  height: 150px;
-  background-color: #b8b8b9;
+  position: relative;
+  justify-content: space-between;
+  height: 300px;
+  background-color: var(--brandBackgroundColor);
 }
 .fortalezas {
   box-sizing: border-box;
+  width: 50%;
   /*background-color: palevioletred;*/
 }
-
+.fortalezasTitle {
+  padding: 15px;
+  font-family: var(--secondaryFont);
+  font-size: var(--fontSubtitle);
+  color: var(--brandColorDark);
+  text-align: center;
+}
+.fortalezasText {
+  padding: 15px;
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+  color: var(--fontColorDark);
+  text-align: center;
+}
 .desarrollo {
   box-sizing: border-box;
+  width: 50%;
   /* background-color: palevioletred;*/
 }
+.desarrolloTitle {
+  padding: 15px;
+  font-family: var(--secondaryFont);
+  font-size: var(--fontSubtitle);
+  color: var(--brandColorDark);
+  text-align: center;
+}
+.desarrolloText {
+  padding: 15px;
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+  color: var(--fontColorDark);
+  text-align: center;
+}
+
 /* MARCJANNA START */
 
 /* HERO */
