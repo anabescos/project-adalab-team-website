@@ -45,17 +45,41 @@
 }
 
 /* TEAM AND DESCRiPTION*/
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
 
-.main-container {
+.teamContainer {
   box-sizing: border-box;
-  border: #54585a;
+  height: 150px;
   background-color: white;
+  content: center;
 }
 
-.equipo-title {
-  color: blue-green #099d8d;
+#equipoTitle {
+  text-align: center;
+  color: #099d8d;
 }
 
+.teamdescription {
+  text-align: center;
+}
+.power {
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  background-color: #b8b8b9;
+}
+.fortalezas {
+  box-sizing: border-box;
+  /*background-color: palevioletred;*/
+}
+
+.desarrollo {
+  box-sizing: border-box;
+  /* background-color: palevioletred;*/
+}
 /* MARCJANNA START */
 
 /* HERO */
