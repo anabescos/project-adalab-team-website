@@ -182,15 +182,15 @@
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
 }
-
+/*
 .alignLeft {
-  /*justify-content: left;*/
+  
 }
 
 .alignRight {
-  /*justify-content: right;*/
+  justify-content: right;
 }
-
+*/
 .picWrapper {
   display: inline-block;
   box-sizing: content-box;
@@ -205,7 +205,7 @@
   background-size: cover;
 }
 .marcjanna {
-  background-image: url("../images/marcjanna300x300.jpg");
+  background-image: url("../images/marcjanna300x300ok.jpg");
 }
 .anaB {
   background-image: url("../images/ana_bescos300x300.jpg");
