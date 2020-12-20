@@ -84,24 +84,24 @@
 
 .teamContainer {
   position: relative;
-  height: 400px;
+  padding: 0 30px 15px 30px;
   background-color: white;
   justify-content: center;
 }
 
 #equipoTitle {
   text-align: center;
+  padding-top: 30px;
   color: var(--brandColorLight);
   font-size: 24px;
   font-family: var(--secondaryFont);
 }
 .teamText {
   justify-content: center;
-  padding: 30px 30px 0;
-  height: 192px;
-  margin: 15px 0 0;
+  padding: 15px 30px 15px 30px;
+  width: 100%;
   font-family: var(--mainFont);
-  font-size: 16px;
+  font-size: var(--fontMainText);
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
@@ -110,8 +110,8 @@
   box-sizing: border-box;
   position: absolute;
   transform: translate(-50%, -50%) rotate(45deg);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   left: 50%;
   top: 0;
   background-color: white;
@@ -122,16 +122,15 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  height: 300px;
+  padding-bottom: 45px;
   background-color: var(--brandBackgroundColor);
 }
 .fortalezas {
   box-sizing: border-box;
   width: 50%;
-  /*background-color: palevioletred;*/
+  padding-top: 30px;
 }
 .fortalezasTitle {
-  padding: 15px;
   font-family: var(--secondaryFont);
   font-size: var(--fontSubtitle);
   color: var(--brandColorDark);
@@ -144,25 +143,7 @@
   color: var(--fontColorDark);
   text-align: center;
 }
-.desarrollo {
-  box-sizing: border-box;
-  width: 50%;
-  /* background-color: palevioletred;*/
-}
-.desarrolloTitle {
-  padding: 15px;
-  font-family: var(--secondaryFont);
-  font-size: var(--fontSubtitle);
-  color: var(--brandColorDark);
-  text-align: center;
-}
-.desarrolloText {
-  padding: 15px;
-  font-family: var(--mainFont);
-  font-size: var(--fontMainText);
-  color: var(--fontColorDark);
-  text-align: center;
-}
+
 /* QUIENES SOMOS*/
 
 #quienesSomos {
@@ -312,7 +293,8 @@ footer:before {
   font-weight: 600;
 }
 
-a.navLink, a.navLink:visited {
+a.navLink,
+a.navLink:visited {
   color: var(--fontColorDark);
   text-transform: uppercase;
   text-decoration: none;
