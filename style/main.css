@@ -259,10 +259,12 @@
   color: black;
   background-color: #ffffff;
   width: calc(100% - 30px);
-  height: 80px;
+  /* height: 80px; */
   padding: 15px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-family: var(--mainFont);
+  /* en documentación 18, pedir permiso para el cambio */
+  font-size: 17px;
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
@@ -294,25 +296,26 @@ footer:before {
   background-color: var(--fontColorLight);
 }
 
-.copyright {
-  margin: 30px 0 20px;
+.footerFont {
+  font-family: var(--mainFont);
   font-size: var(--fontSmall);
   line-height: 1.43;
+}
+
+.copyright {
+  margin: 30px 0 20px;
   color: var(--fontColorLight);
 }
 
 .footerMenu {
   margin-bottom: 30px;
-  font-size: var(--fontSmall);
   font-weight: 600;
-  line-height: 1.43;
 }
 
-a.navLink {
+a.navLink, a.navLink:visited {
   color: var(--fontColorDark);
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .logoFooter {
