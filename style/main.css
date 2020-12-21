@@ -40,9 +40,8 @@
 }
 
 .headingTop {
-  width: 100%;
+  /* width: 100%; */
   height: 60px;
-  /* padding: 15px 80px; */
   /* background-color: var(--brandColorDark); */
   display: flex;
   justify-content: center;
@@ -88,7 +87,6 @@
 
 .linkMenu {
   height: 30px;
-  padding: 0 18px;
   font-family: var(--secondaryFont);
   color: white;
   font-size: 15px;
@@ -127,6 +125,14 @@
   .menuTablet {
     width: 50%;
     display: flex;
+  }
+
+  .linkMenu {
+    padding: 0 9px;
+  }
+
+  .headingTop {
+    justify-content: flex-start;
   }
 }
 
@@ -247,10 +253,8 @@
 }
 
 .picWrapper {
-<<<<<<< HEAD
   margin-bottom: 15px;
   padding: 0;
-=======
   display: inline-block;
   box-sizing: content-box;
   /*max-width: 300px;
@@ -259,7 +263,6 @@
   width: 180px;
   padding: 2px;
   margin: 30px 0 15px 0;
->>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
   border: 4px solid #eaeaea;
   border-radius: 4px;
   /*background-size: cover;*/
@@ -276,12 +279,9 @@
 .anaA {
   background-image: url("../images/ana_apezteguia300x300.jpg");
 }
-<<<<<<< HEAD
 .bigPic {
   display: none;
 }
-=======
->>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
 .adalaberName {
   display: inline-block;
   font-family: var(--mainFont);
