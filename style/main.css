@@ -142,8 +142,9 @@
   flex-direction: column;
 }
 .teamContainer {
+  box-sizing: border-box;
+  display: flex;
   position: relative;
-  padding: 0 30px 15px 30px;
   background-color: white;
   justify-content: center;
 }
@@ -165,7 +166,6 @@
   width: 100%;
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
-  line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
 }
@@ -181,7 +181,6 @@
 }
 
 .strengthsWeaknesses {
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--brandBackgroundColor);
@@ -189,6 +188,7 @@
 }
 .strengths {
   width: 100%;
+  margin: 0 15px 0 15px;
 }
 .strengthsTitle {
   text-align: center;
@@ -204,25 +204,7 @@
   color: var(--fontColorDark);
   text-align: center;
   line-height: 1.5;
-  text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-@media all and (min-width: 768px) {
-  .teamText {
-    color: var(--fontColorLight);
-    font-size: 1rem;
-    padding: 15px 45px 30px 45px;
-  }
-
-  .strengthsWeaknesses {
-    flex-direction: row;
-    padding: 0 45px 60px 45px;
-    font-size: 1rem;
-  }
-}
-
-@media all and(min-width: 1200px) {
+  padding: 0 15px 0 15px;
 }
 
 /* QUIENES SOMOS*/
@@ -461,7 +443,23 @@ a.navLink:hover {
     font-size: 18px;
   }
 
-  /* Aqui MEDIA TABLET de SAGRA */
+  /* MEDIA TABLET de SAGRA */
+  @media all and (min-width: 768px) {
+    .team {
+      color: var(--brandColorDark);
+    }
+    .teamText {
+      color: var(--fontColorLight);
+      padding: 15px 45px 30px 45px;
+    }
+
+    .strengthsWeaknesses {
+      flex-direction: row;
+    }
+    .strengthsTitle {
+      padding-bottom: 15px;
+    }
+  }
 
   /* Aqui MEDIA TABLET de ANA A */
 
@@ -516,7 +514,15 @@ a.navLink:hover {
     line-height: 1.25;
   }
 
-  /* Aqui MEDIA DESKTOP de SAGRA */
+  /* MEDIA DESKTOP de SAGRA */
+  @media all and (min-width: 1200px) {
+    .teamContainer {
+      padding: 0 300px 60px 299px;
+    }
+    .strengthsWeaknesses {
+      padding: 0 138px 60px 138px;
+    }
+  }
 
   /* Aqui MEDIA DESKTOP de ANA A */
 }
