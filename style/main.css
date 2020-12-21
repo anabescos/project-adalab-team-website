@@ -72,7 +72,6 @@
 }
 .menuTablet {
   /* width: 320px; */
-  background-color: grey;
   display: none;
   opacity: 0.9;
   align-items: center;
