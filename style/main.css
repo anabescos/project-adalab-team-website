@@ -183,10 +183,23 @@
   padding-right: 30px;
   padding-left: 30px;
 }
-/*@media all and (min-with:769px){
+/*@media all and (min-width: 768px) {
+  .teamText {
+    color: var(--fontColorLight);
+    font-size: 1rem;
+    padding: 15px 45px 30px 45px;
+  }
 
-}*/
+  .strengthsWeaknesses {
+    flex-direction: row;
+    padding: 0 45px 60px 45px;
+    font-size: 1rem;
+  }
+}
 
+@media all and(min-width: 1200px) {
+}
+*/
 /* QUIENES SOMOS*/
 
 #quienesSomos {
