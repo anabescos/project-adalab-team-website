@@ -10,7 +10,6 @@
   <!--Fontawesome css-->
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/main.css">
-  <script src="https://kit.fontawesome.com/f2e0e49a34.js" crossorigin="anonymous"></script>
   <title>devRockets @ Adalab</title>
 </head>
 
@@ -18,20 +17,21 @@
   <!-- Header -->
   <header class="header">
     <div class="headingTop">
-      <h1 class="nameTeam">DEV-ROCKETS</h1>
+      <h1 class="nameTeam">DEVROCKETS</h1>
     </div>
-    <ul class="menu menuOptions">
+    <nav class="menu">
+      <ul class="menuOptions">
       <li>
-        <a class="linkMenu" href="#equipoTitle">EQUIPO</a>
+        <a class="linkMenu equipoLink" href="#equipoTitle">EQUIPO</a>
       </li>
       <li>
-        <a class="linkMenu" href="#quienesSomos">QUIÉNES SOMOS</a>
+        <a class="linkMenu somosLink" href="#quienesSomos">QUIÉNES SOMOS</a>
       </li>
       <li>
-        <a class="linkMenu" href="">CONTACTO</a>
+        <a class="linkMenu contactLink" href="">CONTACTO</a>
       </li>
     </ul>
-
+  </nav>
   </header>
   <main>
     <!-- hero -->
@@ -49,7 +49,8 @@
     <section class="mainContainer">
       <div class="teamContainer">
         <article>
-          <h2 id="equipoTitle">EQUIPO</h2>
+          <span id="equipoTitle" class="teamTitle"></span>
+          <h2 class="team">EQUIPO</h2>
           <p class="teamText"> Somos un equipo de mujeres que pensamos de forma coordinada y cooperativa, unidas con el
             objetivo común de que compartas tu sueño con el mundo.
             Para ello creamos, diseñamos y optimizamos las herramientas tecnológicas que tu proyecto necesita.
@@ -63,16 +64,16 @@
             creamos. El límite son las estrellas, porque somos naves de conocimiento y desarrollo tecnológico en
             constante evolución. Vuela con nosotras. Somos futuro. <br>
             We are
-            DevROCKETS.
+            devRockets.
           </p>
         </article>
       </div>
-      <div class="power">
-        <div class="cuadrado"></div>
+      <div class="strengthsWeaknesses">
+        <div class="square"></div>
 
-        <article class="fortalezas">
-          <h2 class="fortalezasTitle">Fortalezas</h2>
-          <p class="fortalezasText">Formación técnica en maquetación HTML5, CSS3, Flexbox y control de versiones con
+        <article class="strengths">
+          <h2 class="strengthsTitle">Fortalezas</h2>
+          <p class="strenghsText">Formación técnica en maquetación HTML5, CSS3, Flexbox y control de versiones con
             Git.
             Manejo de Slack, GitHub, VSCode, Terminal y Zeplin.
             Trabajamos en equipo con comunicación efectiva, mediante el trabajo en remoto, filosofía Agile y Scrum
@@ -82,10 +83,11 @@
           </p>
         </article>
 
-        <article class="fortalezas">
-          <h2 class="fortalezasTitle">Áreas en desarrollo</h2>
-          <p class="fortalezasText
-          ">Actualmente en formación técnica de SASS, Bootstrap, JavaScript (ES6) y servicios web a terceros (APIs).
+        <article class="strengths">
+          <h2 class="strengthsTitle">Áreas en desarrollo</h2>
+          <p class="strenghsText">Actualmente en formación técnica de SASS, Bootstrap, JavaScript (ES6) y
+            servicios web
+            a terceros (APIs).
             También en desarrollo de creación de SPAs sencillas con REACT y manejo de herramientas como Linter y Gulp.
             En proceso de integración en la comunidad tecnológica. Próxima incorporación laboral como desarrolladoras
             web.
@@ -95,80 +97,86 @@
     </section>
 
     <!-- adalabers / quienes somos -->
-    <section id="quienesSomos">
-      <h2 class="quienesSomosTitle">Quiénes somos</h2>
-      <article class="adalaber">
-        <div class="picWrapper marcjanna">
-        </div>
-        <h3 class="adalaberName">Marcjanna Stopinska</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
-          eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
-          neque et aliquam varius. </p>
-        <ul>
-          <li class="rrssAdalaber"><a href="https://twitter.com/marcjanna_s" target="_blank"><i
-                class="fab fa-twitter rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="http://www.linkedin.com/in/marcjanna-stopinska" target="_blank"><i
-                class="fab fa-linkedin-in rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://github.com/marcjnn" target="_blank"><i
-                class="fab fa-github-alt rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="mailto:marcjanna.stopinska@gmail.com" target="_blank"><i
-                class="fas fa-envelope rrss"></i></a></li>
-        </ul>
-      </article>
-      <article class="adalaber">
-        <div class="picWrapper anaB">
-        </div>
-        <h3 class="adalaberName">Ana Bescós</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
-          eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
-          neque et aliquam varius. </p>
-        <ul>
-          <li class="rrssAdalaber"><a href="https://twitter.com/Ana_Bescos_" target="_blank"><i
-                class="fab fa-twitter rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://www.linkedin.com/in/ana-besc%C3%B3s-19483b201/" target="_blank"><i
-                class="fab fa-linkedin-in rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://github.com/anabescos" target="_blank"><i
-                class="fab fa-github-alt rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="mailto:anabes88@gmail.com" target="_blank"><i
-                class="fas fa-envelope rrss"></i></a></li>
-        </ul>
-      </article>
-      <article class="adalaber">
-        <div class="picWrapper sagra">
-        </div>
-        <h3 class="adalaberName">Sagra Mielgo</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
-          eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
-          neque et aliquam varius. </p>
-        <ul>
-          <li class="rrssAdalaber"><a href="https://twitter.com/sagramielgo" target="_blank"><i
-                class="fab fa-twitter rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://www.linkedin.com/in/sagramielgo" target="_blank"><i
-                class="fab fa-linkedin-in rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://github.com/Sagramielgo" target="_blank"><i
-                class="fab fa-github-alt rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="mailto:sagramielgo@gmail.com" target="_blank"><i
-                class="fas fa-envelope rrss"></i></a></li>
-        </ul>
-      </article>
-      <article class="adalaber">
-        <div class="picWrapper anaA">
-        </div>
-        <h3 class="adalaberName">Ana Apezteguía</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
-          eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
-          neque et aliquam varius. </p>
-        <ul>
-          <li class="rrssAdalaber"><a href="https://twitter.com/anadisena" target="_blank"><i
-                class="fab fa-twitter rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://es.linkedin.com/in/anaapezteguiamartinez" target="_blank"><i
-                class="fab fa-linkedin-in rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="https://github.com/anaapezteguia" target="_blank"><i
-                class="fab fa-github-alt rrss"></i></a>·</li>
-          <li class="rrssAdalaber"><a href="mailto:ana.apezteguia@gmail.com" target="_blank"><i
-                class="fas fa-envelope rrss"></i></a></li>
-        </ul>
-      </article>
+    <section id="quienesSomos" class="equipoTitle">
+      <div class="pageContainer">
+        <h2 class="quienesSomosTitle">Quiénes somos</h2>
+        <article class="adalaber">
+          <figure class="picWrapper">
+            <img class="pic" src="./images/marcjanna300x300ok.jpg" alt="Marcjanna Stopińska">
+          </figure>
+          <h3 class="adalaberName">Marcjanna Stopińska</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
+            eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
+            neque et aliquam varius. </p>
+          <ul>
+            <li class="rrssAdalaber"><a href="https://twitter.com/marcjanna_s" target="_blank"><i
+                  class="fab fa-twitter rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="http://www.linkedin.com/in/marcjanna-stopinska" target="_blank"><i
+                  class="fab fa-linkedin-in rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://github.com/marcjnn" target="_blank"><i
+                  class="fab fa-github-alt rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="mailto:marcjanna.stopinska@gmail.com" target="_blank"><i
+                  class="fas fa-envelope rrss"></i></a></li>
+          </ul>
+        </article>
+        <article class="adalaber">
+          <figure class="picWrapper">
+            <img class="pic" src="./images/ana_bescos300x300.jpg" alt="Ana Bescós">
+          </figure>
+          <h3 class="adalaberName">Ana Bescós</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
+            eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
+            neque et aliquam varius. </p>
+          <ul>
+            <li class="rrssAdalaber"><a href="https://twitter.com/Ana_Bescos_" target="_blank"><i
+                  class="fab fa-twitter rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://www.linkedin.com/in/ana-besc%C3%B3s-19483b201/" target="_blank"><i
+                  class="fab fa-linkedin-in rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://github.com/anabescos" target="_blank"><i
+                  class="fab fa-github-alt rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="mailto:anabes88@gmail.com" target="_blank"><i
+                  class="fas fa-envelope rrss"></i></a></li>
+          </ul>
+        </article>
+        <article class="adalaber">
+          <figure class="picWrapper">
+            <img class="pic" src="./images/sagra_mielgo300x300.jpg" alt="Sagra Mielgo">
+          </figure>
+          <h3 class="adalaberName">Sagra Mielgo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
+            eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
+            neque et aliquam varius. </p>
+          <ul>
+            <li class="rrssAdalaber"><a href="https://twitter.com/sagramielgo" target="_blank"><i
+                  class="fab fa-twitter rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://www.linkedin.com/in/sagramielgo" target="_blank"><i
+                  class="fab fa-linkedin-in rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://github.com/Sagramielgo" target="_blank"><i
+                  class="fab fa-github-alt rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="mailto:sagramielgo@gmail.com" target="_blank"><i
+                  class="fas fa-envelope rrss"></i></a></li>
+          </ul>
+        </article>
+        <article class="adalaber">
+          <figure class="picWrapper">
+            <img class="pic" src="./images/ana_apezteguia300x300.jpg" alt="Ana Apezteguía">
+          </figure>
+          <h3 class="adalaberName">Ana Apezteguía</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus
+            eleifend in. Cras hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat convallis. Morbi interdum
+            neque et aliquam varius. </p>
+          <ul>
+            <li class="rrssAdalaber"><a href="https://twitter.com/anadisena" target="_blank"><i
+                  class="fab fa-twitter rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://es.linkedin.com/in/anaapezteguiamartinez" target="_blank"><i
+                  class="fab fa-linkedin-in rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="https://github.com/anaapezteguia" target="_blank"><i
+                  class="fab fa-github-alt rrss"></i></a>·</li>
+            <li class="rrssAdalaber"><a href="mailto:ana.apezteguia@gmail.com" target="_blank"><i
+                  class="fas fa-envelope rrss"></i></a></li>
+          </ul>
+        </article>
+    </div>
     </section>
   </main>
 
