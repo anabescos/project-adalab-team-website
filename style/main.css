@@ -229,9 +229,11 @@
 .quienesSomosTitle {
   text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: var(--brandColorDark);
   font-size: var(--fontTitle);
   font-family: var(--secondaryFont);
+  margin-bottom: 20px;
 }
 .adalaber {
   /*
@@ -243,16 +245,12 @@
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
 }
-/*
-.alignLeft {
-  
-}
 
-.alignRight {
-  justify-content: right;
-}
-*/
 .picWrapper {
+<<<<<<< HEAD
+  margin-bottom: 15px;
+  padding: 0;
+=======
   display: inline-block;
   box-sizing: content-box;
   /*max-width: 300px;
@@ -261,6 +259,7 @@
   width: 180px;
   padding: 2px;
   margin: 30px 0 15px 0;
+>>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
   border: 4px solid #eaeaea;
   border-radius: 4px;
   /*background-size: cover;*/
@@ -277,7 +276,14 @@
 .anaA {
   background-image: url("../images/ana_apezteguia300x300.jpg");
 }
+<<<<<<< HEAD
+.bigPic {
+  display: none;
+}
+=======
+>>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
 .adalaberName {
+  display: inline-block;
   font-family: var(--mainFont);
   font-size: 20px;
   font-weight: 300;
@@ -290,6 +296,37 @@
 .rrss {
   padding: 15px 5px;
   color: var(--brandColorDark);
+}
+/*MEDIA QUIENES SOMOS*/
+@media all and (min-width: 768px) {
+  .adalaber {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .picWrapper {
+    width: 25%;
+    max-width: 278px;
+  }
+  .pic {
+    display: none;
+  }
+  .bigPic {
+    display: inline-block;
+    width: 100%;
+    max-width: 278px;
+  }
+  .alignLeft {
+    text-align: left;
+  }
+  .alignRight {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  .adalaberData {
+    width: 75%;
+    padding: 0 20px;
+  }
 }
 
 /* MARCJANNA START */
