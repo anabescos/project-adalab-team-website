@@ -36,13 +36,12 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  /* box-sizing: border-box; */
 }
 
 .headingTop {
   width: 100%;
   height: 60px;
-  padding: 15px 80px;
+  /* padding: 15px 80px; */
   background-color: var(--brandColorDark);
   display: flex;
   justify-content: center;
@@ -67,20 +66,19 @@
 /* HEADER-MENU*/
 
 .menu {
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--brandColorLight);
   opacity: 0.9;
-  /* margin: 60px 0 0; */
-  /* padding: 8px 17px 7px 16px; */
 }
 .menuTablet {
-  width: 320px;
+  /* width: 320px; */
+  background-color: grey;
   display: none;
   opacity: 0.9;
   align-items: center;
+  justify-content: flex-end;
 }
 .menuOptions {
-  width: 100%;
   height: 45px;
   list-style-type: none;
   display: flex;
@@ -90,6 +88,7 @@
 
 .linkMenu {
   height: 30px;
+  padding: 0 18px;
   font-family: var(--secondaryFont);
   color: white;
   font-size: 15px;
@@ -104,15 +103,15 @@
   color: var(--fontColorDark);
 }
 .equipoLink {
-  width: 56px;
+  /* width: 56px; */
   /* margin: 0 15px 0 0; */
 }
 .somosLink {
-  width: 121px;
+  /* width: 121px; */
   /* margin: 0 15px; */
 }
 .contactLink {
-  width: 80px;
+  /* width: 80px; */
   /* margin: 0 0 0 15px; */
 }
 @media all and (min-width: 768px) {
@@ -130,6 +129,7 @@
     display: flex;
   }
 }
+
 /* TEAM AND DESCRiPTION*/
 .mainContainer {
   display: flex;
@@ -397,7 +397,7 @@ a.navLink:hover {
   height: 100%;
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .pageContainer {
     margin: 0px 46px;
   }
@@ -414,7 +414,7 @@ a.navLink:hover {
   /* .heroImage {
     background-image: url(../images/284.png);
   } */
-  
+
   .claim {
     width: 65%;
     background-color: rgba(255, 255, 255, 0.8);
@@ -459,10 +459,9 @@ a.navLink:hover {
   .containerLogo {
     order: 1;
   }
+}
 
-}  
-
-@media all and (min-width:1200px) {
+@media all and (min-width: 1200px) {
   .pageContainer {
     margin: 0px 138px;
   }
@@ -483,9 +482,6 @@ a.navLink:hover {
   /* Aqui MEDIA DESKTOP de SAGRA */
 
   /* Aqui MEDIA DESKTOP de ANA A */
-
-
-
 }
 
 /* MARCJANNA END */
