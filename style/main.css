@@ -36,20 +36,19 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  /* box-sizing: border-box; */
 }
 
 .headingTop {
   width: 100%;
   height: 60px;
-  padding: 15px 80px;
-
+  /* padding: 15px 80px; */
   background-color: var(--brandColorDark);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0.95;
 }
+
 .nameTeam {
   width: 160px;
   height: 30px;
@@ -67,24 +66,28 @@
 /* HEADER-MENU*/
 
 .menu {
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--brandColorLight);
   opacity: 0.9;
-  /* margin: 60px 0 0; */
-  /* padding: 8px 17px 7px 16px; */
+}
+.menuTablet {
+  /* width: 320px; */
+  display: none;
+  opacity: 0.9;
+  align-items: center;
+  justify-content: flex-end;
 }
 .menuOptions {
-  width: 100%;
   height: 45px;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  /* color: white; */
 }
+
 .linkMenu {
   height: 30px;
+  padding: 0 18px;
   font-family: var(--secondaryFont);
   color: white;
   font-size: 15px;
@@ -99,23 +102,38 @@
   color: var(--fontColorDark);
 }
 .equipoLink {
-  width: 56px;
+  /* width: 56px; */
   /* margin: 0 15px 0 0; */
 }
 .somosLink {
-  width: 121px;
+  /* width: 121px; */
   /* margin: 0 15px; */
 }
 .contactLink {
-  width: 80px;
+  /* width: 80px; */
   /* margin: 0 0 0 15px; */
 }
+@media all and (min-width: 768px) {
+  .nameTeam {
+    width: 50%;
+    text-align: start;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuTablet {
+    width: 50%;
+    display: flex;
+  }
+}
+
 /* TEAM AND DESCRiPTION*/
 .mainContainer {
   display: flex;
   flex-direction: column;
 }
-
 .teamContainer {
   position: relative;
   padding: 0 30px 15px 30px;
@@ -183,9 +201,22 @@
   padding-right: 30px;
   padding-left: 30px;
 }
-/*@media all and (min-with:769px){
+@media all and (min-width: 768px) {
+  .teamText {
+    color: var(--fontColorLight);
+    font-size: 1rem;
+    padding: 15px 45px 30px 45px;
+  }
 
-}*/
+  .strengthsWeaknesses {
+    flex-direction: row;
+    padding: 0 45px 60px 45px;
+    font-size: 1rem;
+  }
+}
+
+@media all and(min-width: 1200px) {
+}
 
 /* QUIENES SOMOS*/
 
@@ -195,6 +226,7 @@
 }
 
 .quienesSomosTitle {
+  text-align: center;
   text-transform: uppercase;
   text-align: center;
   color: var(--brandColorDark);
@@ -203,27 +235,52 @@
   margin-bottom: 20px;
 }
 .adalaber {
+  /*
   display: flex;
   flex-direction: column;
   align-items: center;
+  */
   text-align: center;
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
 }
 
 .picWrapper {
+<<<<<<< HEAD
   margin-bottom: 15px;
   padding: 0;
+=======
+  display: inline-block;
+  box-sizing: content-box;
+  /*max-width: 300px;
+  max-height: 300px;*/
+  height: 180px;
+  width: 180px;
+  padding: 2px;
+  margin: 30px 0 15px 0;
+>>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
   border: 4px solid #eaeaea;
   border-radius: 4px;
+  /*background-size: cover;*/
 }
-.pic {
-  width: 100%;
-  min-width: 180px;
+.marcjanna {
+  background-image: url("../images/marcjanna300x300ok.jpg");
 }
+.anaB {
+  background-image: url("../images/ana_bescos300x300.jpg");
+}
+.sagra {
+  background-image: url("../images/sagra_mielgo300x300.jpg");
+}
+.anaA {
+  background-image: url("../images/ana_apezteguia300x300.jpg");
+}
+<<<<<<< HEAD
 .bigPic {
   display: none;
 }
+=======
+>>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
 .adalaberName {
   display: inline-block;
   font-family: var(--mainFont);
@@ -279,7 +336,7 @@
   width: 100%;
   /* min-width remove after reset? */
   min-width: 320px;
-  margin-bottom: -30px;
+  /* margin-bottom: -30px; */
 }
 
 .heroImage {
@@ -299,19 +356,15 @@
   color: black;
   background-color: #ffffff;
   width: calc(100% - 30px);
-  /* height: 80px; */
   padding: 15px;
   box-sizing: border-box;
   font-family: var(--mainFont);
-  /* en documentación 18, pedir permiso para el cambio */
   font-size: 17px;
   font-weight: 600;
   line-height: 1.39;
   position: absolute;
   bottom: 0px;
-  left: 15px;
   transform: translate(0, 50%);
-  z-index: 10;
 }
 
 /* FOOTER */
@@ -319,14 +372,11 @@
 .footer {
   width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   /* position only needed if I use .footer:before afterall */
 }
 
-footer:before {
+.footer:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -334,6 +384,13 @@ footer:before {
   height: 1px;
   content: " ";
   background-color: var(--fontColorLight);
+}
+
+.footerWrap {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footerFont {
@@ -359,10 +416,108 @@ a.navLink:visited {
   text-decoration: none;
 }
 
-.logoFooter {
+a.navLink:hover {
+  background-color: var(--brandColorDark);
+  color: white;
+}
+
+.containerLogo {
   width: 115.9px;
   height: 45px;
   margin-bottom: 45px;
+  order: 1;
+}
+
+.logoFooter {
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .pageContainer {
+    margin: 0px 46px;
+  }
+
+  /* Aqui MEDIA TABLET de ANA B */
+
+  .hero {
+    width: 100%;
+    /* min-width remove after reset? */
+    min-width: 320px;
+    /* margin-bottom: -45px; */
+  }
+
+  /* .heroImage {
+    background-image: url(../images/284.png);
+  } */
+
+  .claim {
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translate(0, 0);
+    padding: 15px 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+  /* Aqui MEDIA TABLET de SAGRA */
+
+  /* Aqui MEDIA TABLET de ANA A */
+
+  .footer {
+    text-align: right;
+  }
+
+  .footerWrap {
+    /* height: 170px; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .copyright {
+    width: 50%;
+    margin: 30px 0 15px;
+    /* order: 1;
+    align-self: flex-start; */
+    text-align: left;
+  }
+
+  .footerMenu {
+    /* order: 2; */
+    width: 50%;
+    align-self: center;
+    position: relative;
+    transform: translate(0, 100%);
+  }
+
+  .containerLogo {
+    order: 1;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .pageContainer {
+    margin: 0px 138px;
+  }
+
+  /* Aqui MEDIA DESKTOP de ANA B */
+
+  .heroImage {
+    /* background-image: url(../images/284.png); */
+    height: 550px;
+  }
+
+  .claim {
+    /* width: 60%; */
+    font-size: var(--fontTitle);
+    line-height: 1.25;
+  }
+
+  /* Aqui MEDIA DESKTOP de SAGRA */
+
+  /* Aqui MEDIA DESKTOP de ANA A */
 }
 
 /* MARCJANNA END */
