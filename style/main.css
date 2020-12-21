@@ -159,6 +159,11 @@
   font-family: var(--secondaryFont);
 }
 .adalaber {
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  */
   text-align: center;
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
@@ -175,15 +180,15 @@
 .picWrapper {
   display: inline-block;
   box-sizing: content-box;
-  max-width: 300px;
-  max-height: 300px;
+  /*max-width: 300px;
+  max-height: 300px;*/
   height: 180px;
   width: 180px;
   padding: 2px;
   margin: 30px 0 15px 0;
   border: 4px solid #eaeaea;
   border-radius: 4px;
-  background-size: cover;
+  /*background-size: cover;*/
 }
 .marcjanna {
   background-image: url("../images/marcjanna300x300ok.jpg");
