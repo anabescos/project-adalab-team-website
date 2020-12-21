@@ -89,9 +89,14 @@
   justify-content: center;
 }
 
-#equipoTitle {
+.equipoTitle {
+  position: relative;
+  top: -120px;
+}
+
+.team {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 90px 15px 30px 15px;
   color: var(--brandColorLight);
   font-size: 24px;
   font-family: var(--secondaryFont);
@@ -106,42 +111,46 @@
   letter-spacing: normal;
   text-align: center;
 }
-.cuadrado {
+.square {
   box-sizing: border-box;
   position: absolute;
   transform: translate(-50%, -50%) rotate(45deg);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   left: 50%;
   top: 0;
   background-color: white;
 }
 
-.power {
-  box-sizing: border-box;
-  display: flex;
+.strengthsWeaknesses {
   position: relative;
-  justify-content: space-between;
-  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--brandBackgroundColor);
+  padding: 0 15px 45px 15px;
 }
-.fortalezas {
-  box-sizing: border-box;
-  width: 50%;
-  padding-top: 30px;
+.strengths {
+  width: 100%;
 }
-.fortalezasTitle {
+.strengthsTitle {
+  text-align: center;
+  line-height: 45px;
   font-family: var(--secondaryFont);
   font-size: var(--fontSubtitle);
   color: var(--brandColorDark);
-  text-align: center;
+  padding-top: 30px;
+
+  padding-top: 30px;
 }
-.fortalezasText {
-  padding: 15px;
+.strenghsText {
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
   color: var(--fontColorDark);
   text-align: center;
+  line-height: 1.5;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* QUIENES SOMOS*/
