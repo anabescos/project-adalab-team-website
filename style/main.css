@@ -45,8 +45,8 @@
   padding: 15px 80px;
   background-color: var(--brandColorDark);
   display: flex;
-  /*justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
   opacity: 0.95;
 }
 
