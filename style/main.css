@@ -115,11 +115,6 @@
   width: 80px;
   /* margin: 0 0 0 15px; */
 }
-/* TEAM AND DESCRiPTION*/
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-}
 @media all and (min-width: 768px) {
   .nameTeam {
     width: 50%;
@@ -129,14 +124,16 @@
   .menu {
     display: none;
   }
-  /* .headingTop {
-    justify-content: flex-start;
-  }
-  */
+
   .menuTablet {
     width: 50%;
     display: flex;
   }
+}
+/* TEAM AND DESCRiPTION*/
+.mainContainer {
+  display: flex;
+  flex-direction: column;
 }
 .teamContainer {
   position: relative;
