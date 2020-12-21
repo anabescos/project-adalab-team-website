@@ -22,6 +22,10 @@
   color: var(--fontColorDark);
 }
 
+.pageContainer {
+  margin: 0 15px;
+}
+
 /* header, main, section, footer {
   min-width: 320px;
 } */
