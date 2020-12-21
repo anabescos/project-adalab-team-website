@@ -93,14 +93,13 @@
   justify-content: center;
 }
 
-.equipoTitle {
+.teamTitle {
   position: relative;
   top: -120px;
 }
 
 .team {
   text-align: center;
-  padding-top: 90px 15px 30px 15px;
   color: var(--brandColorLight);
   font-size: 24px;
   font-family: var(--secondaryFont);
@@ -143,8 +142,6 @@
   font-size: var(--fontSubtitle);
   color: var(--brandColorDark);
   padding-top: 30px;
-
-  padding-top: 30px;
 }
 .strenghsText {
   font-family: var(--mainFont);
@@ -153,9 +150,12 @@
   text-align: center;
   line-height: 1.5;
   text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
+/*@media all and (min-with:769px){
+
+}*/
 
 /* QUIENES SOMOS*/
 
