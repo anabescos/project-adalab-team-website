@@ -36,10 +36,14 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
+  /* box-sizing: border-box; */
 }
 
 .headingTop {
+  width: 100%;
   height: 60px;
+  padding: 15px 80px;
+
   background-color: var(--brandColorDark);
   display: flex;
   justify-content: center;
@@ -47,39 +51,65 @@
   opacity: 0.95;
 }
 .nameTeam {
-  font-size: 16px;
-  color: white;
+  width: 160px;
+  height: 30px;
   font-family: var(--secondaryFont);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
 }
 
 /* HEADER-MENU*/
 
-.linkMenu {
-  color: white;
-  text-decoration: none;
-  padding: 8px;
-}
-/* .linkMenu:hover {
-  color: ;
-} */
-
 .menu {
   width: 100%;
-  height: 45px;
   background-color: var(--brandColorLight);
   opacity: 0.9;
+  /* margin: 60px 0 0; */
+  /* padding: 8px 17px 7px 16px; */
 }
 .menuOptions {
-  width: 100vw;
+  width: 100%;
+  height: 45px;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 15px;
-  color: white;
-  font-family: var(--secondaryFont);
-}
 
+  /* color: white; */
+}
+.linkMenu {
+  height: 30px;
+  font-family: var(--secondaryFont);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+.linkMenu:hover {
+  color: var(--fontColorDark);
+}
+.equipoLink {
+  width: 56px;
+  /* margin: 0 15px 0 0; */
+}
+.somosLink {
+  width: 121px;
+  /* margin: 0 15px; */
+}
+.contactLink {
+  width: 80px;
+  /* margin: 0 0 0 15px; */
+}
 /* TEAM AND DESCRiPTION*/
 .mainContainer {
   display: flex;
@@ -93,9 +123,14 @@
   justify-content: center;
 }
 
-#equipoTitle {
+.equipoTitle {
+  position: relative;
+  top: -120px;
+}
+
+.team {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 90px 15px 30px 15px;
   color: var(--brandColorLight);
   font-size: 24px;
   font-family: var(--secondaryFont);
@@ -110,42 +145,46 @@
   letter-spacing: normal;
   text-align: center;
 }
-.cuadrado {
+.square {
   box-sizing: border-box;
   position: absolute;
   transform: translate(-50%, -50%) rotate(45deg);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   left: 50%;
   top: 0;
   background-color: white;
 }
 
-.power {
-  box-sizing: border-box;
-  display: flex;
+.strengthsWeaknesses {
   position: relative;
-  justify-content: space-between;
-  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
   background-color: var(--brandBackgroundColor);
+  padding: 0 15px 45px 15px;
 }
-.fortalezas {
-  box-sizing: border-box;
-  width: 50%;
-  padding-top: 30px;
+.strengths {
+  width: 100%;
 }
-.fortalezasTitle {
+.strengthsTitle {
+  text-align: center;
+  line-height: 45px;
   font-family: var(--secondaryFont);
   font-size: var(--fontSubtitle);
   color: var(--brandColorDark);
-  text-align: center;
+  padding-top: 30px;
+
+  padding-top: 30px;
 }
-.fortalezasText {
-  padding: 15px;
+.strenghsText {
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
   color: var(--fontColorDark);
   text-align: center;
+  line-height: 1.5;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* QUIENES SOMOS*/
