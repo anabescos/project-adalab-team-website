@@ -36,13 +36,12 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  /* box-sizing: border-box; */
 }
 
 .headingTop {
   width: 100%;
   height: 60px;
-  padding: 15px 80px;
+  /* padding: 15px 80px; */
   background-color: var(--brandColorDark);
   display: flex;
   justify-content: center;
@@ -67,20 +66,18 @@
 /* HEADER-MENU*/
 
 .menu {
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--brandColorLight);
   opacity: 0.9;
-  /* margin: 60px 0 0; */
-  /* padding: 8px 17px 7px 16px; */
 }
 .menuTablet {
-  width: 320px;
+  /* width: 320px; */
   display: none;
   opacity: 0.9;
   align-items: center;
+  justify-content: flex-end;
 }
 .menuOptions {
-  width: 100%;
   height: 45px;
   list-style-type: none;
   display: flex;
@@ -90,6 +87,7 @@
 
 .linkMenu {
   height: 30px;
+  padding: 0 18px;
   font-family: var(--secondaryFont);
   color: white;
   font-size: 15px;
@@ -104,15 +102,15 @@
   color: var(--fontColorDark);
 }
 .equipoLink {
-  width: 56px;
+  /* width: 56px; */
   /* margin: 0 15px 0 0; */
 }
 .somosLink {
-  width: 121px;
+  /* width: 121px; */
   /* margin: 0 15px; */
 }
 .contactLink {
-  width: 80px;
+  /* width: 80px; */
   /* margin: 0 0 0 15px; */
 }
 @media all and (min-width: 768px) {
@@ -130,6 +128,7 @@
     display: flex;
   }
 }
+
 /* TEAM AND DESCRiPTION*/
 .mainContainer {
   display: flex;
@@ -211,9 +210,11 @@
 .quienesSomosTitle {
   text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: var(--brandColorDark);
   font-size: var(--fontTitle);
   font-family: var(--secondaryFont);
+  margin-bottom: 20px;
 }
 .adalaber {
   /*
@@ -225,16 +226,12 @@
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
 }
-/*
-.alignLeft {
-  
-}
 
-.alignRight {
-  justify-content: right;
-}
-*/
 .picWrapper {
+<<<<<<< HEAD
+  margin-bottom: 15px;
+  padding: 0;
+=======
   display: inline-block;
   box-sizing: content-box;
   /*max-width: 300px;
@@ -243,6 +240,7 @@
   width: 180px;
   padding: 2px;
   margin: 30px 0 15px 0;
+>>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
   border: 4px solid #eaeaea;
   border-radius: 4px;
   /*background-size: cover;*/
@@ -259,7 +257,14 @@
 .anaA {
   background-image: url("../images/ana_apezteguia300x300.jpg");
 }
+<<<<<<< HEAD
+.bigPic {
+  display: none;
+}
+=======
+>>>>>>> f0cd9560b95a5d96dc00ed14ae9b2b11f5ece702
 .adalaberName {
+  display: inline-block;
   font-family: var(--mainFont);
   font-size: 20px;
   font-weight: 300;
@@ -272,6 +277,37 @@
 .rrss {
   padding: 15px 5px;
   color: var(--brandColorDark);
+}
+/*MEDIA QUIENES SOMOS*/
+@media all and (min-width: 768px) {
+  .adalaber {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .picWrapper {
+    width: 25%;
+    max-width: 278px;
+  }
+  .pic {
+    display: none;
+  }
+  .bigPic {
+    display: inline-block;
+    width: 100%;
+    max-width: 278px;
+  }
+  .alignLeft {
+    text-align: left;
+  }
+  .alignRight {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  .adalaberData {
+    width: 75%;
+    padding: 0 20px;
+  }
 }
 
 /* MARCJANNA START */
