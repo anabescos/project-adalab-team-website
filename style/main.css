@@ -1,4 +1,6 @@
 :root {
+  font-size: 16px;
+
   /* colors */
   --brandColorDark: #099d8d;
   --brandColorLight: #14d9c4;
@@ -11,10 +13,10 @@
   --secondaryFont: "Rubik", sans-serif;
 
   /* font-size: */
-  --fontSmall: 14px;
-  --fontMainText: 16px;
-  --fontTitle: 24px;
-  --fontSubtitle: 22px;
+  --fontSmall: 0.875rem;
+  --fontMainText: 1rem;
+  --fontTitle: 1.5rem;
+  --fontSubtitle: 1.375rem;
 }
 
 * {
@@ -24,6 +26,7 @@
 
 .pageContainer {
   margin: 0 15px;
+  /* max-width: 1400px; */
 }
 
 /* header, main, section, footer {
@@ -100,218 +103,18 @@
 .linkMenu:hover {
   color: var(--fontColorDark);
 }
-.equipoLink {
-  /* width: 56px; */
-  /* margin: 0 15px 0 0; */
-}
-.somosLink {
-  /* width: 121px; */
-  /* margin: 0 15px; */
-}
-.contactLink {
-  /* width: 80px; */
-  /* margin: 0 0 0 15px; */
-}
-@media all and (min-width: 768px) {
-  .nameTeam {
-    width: 50%;
-    text-align: start;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .menuTablet {
-    width: 50%;
-    display: flex;
-  }
-
-  .linkMenu {
-    padding: 0 9px;
-  }
-
-  .headingTop {
-    justify-content: flex-start;
-  }
-}
-
-/* TEAM AND DESCRiPTION*/
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-}
-.teamContainer {
-  box-sizing: border-box;
-  display: flex;
-  position: relative;
-  background-color: white;
-  justify-content: center;
-}
-
-.teamTitle {
-  position: relative;
-  top: -120px;
-}
-
-.team {
-  text-align: center;
-  color: var(--brandColorLight);
-  font-size: 24px;
-  font-family: var(--secondaryFont);
-}
-.teamText {
-  justify-content: center;
-  padding: 15px 30px 15px 30px;
-  width: 100%;
-  font-family: var(--mainFont);
-  font-size: var(--fontMainText);
-  letter-spacing: normal;
-  text-align: center;
-}
-.square {
-  box-sizing: border-box;
-  position: absolute;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 30px;
-  height: 30px;
-  left: 50%;
-  top: 0;
-  background-color: white;
-}
-
-.strengthsWeaknesses {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--brandBackgroundColor);
-  padding: 0 15px 45px 15px;
-}
-.strengths {
-  width: 100%;
-  margin: 0 15px 0 15px;
-}
-.strengthsTitle {
-  text-align: center;
-  line-height: 45px;
-  font-family: var(--secondaryFont);
-  font-size: var(--fontSubtitle);
-  color: var(--brandColorDark);
-  padding-top: 30px;
-}
-.strenghsText {
-  font-family: var(--mainFont);
-  font-size: var(--fontMainText);
-  color: var(--fontColorDark);
-  text-align: center;
-  line-height: 1.5;
-  padding: 0 15px 0 15px;
-}
-
-/* QUIENES SOMOS*/
-
-#quienesSomos {
-  display: wrap;
-  padding: 30px;
-}
-
-.quienesSomosTitle {
-  text-align: center;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--brandColorDark);
-  font-size: var(--fontTitle);
-  font-family: var(--secondaryFont);
-  margin-bottom: 20px;
-}
-.adalaber {
-  /*
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  */
-  text-align: center;
-  font-family: var(--mainFont);
-  font-size: var(--fontMainText);
-}
-
-.picWrapper {
-  margin-bottom: 15px;
-  padding: 0;
-  display: inline-block;
-  box-sizing: content-box;
-  /*max-width: 300px;
-  max-height: 300px;*/
-  height: 180px;
-  width: 180px;
-  padding: 2px;
-  margin: 30px 0 15px 0;
-  border: 4px solid #eaeaea;
-  border-radius: 4px;
-  /*background-size: cover;*/
-}
-.marcjanna {
-  background-image: url("../images/marcjanna300x300ok.jpg");
-}
-.anaB {
-  background-image: url("../images/ana_bescos300x300.jpg");
-}
-.sagra {
-  background-image: url("../images/sagra_mielgo300x300.jpg");
-}
-.anaA {
-  background-image: url("../images/ana_apezteguia300x300.jpg");
-}
-.bigPic {
-  display: none;
-}
-.adalaberName {
-  display: inline-block;
-  font-family: var(--mainFont);
-  font-size: 20px;
-  font-weight: 300;
-  color: black;
-  margin-bottom: 10px;
-}
-.rrssAdalaber {
-  display: inline;
-}
-.rrss {
-  padding: 15px 5px;
-  color: var(--brandColorDark);
-}
-/*MEDIA QUIENES SOMOS*/
-@media all and (min-width: 768px) {
-  .adalaber {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .picWrapper {
-    width: 25%;
-    max-width: 278px;
-  }
-  .pic {
-    display: none;
-  }
-  .bigPic {
-    display: inline-block;
-    width: 100%;
-    max-width: 278px;
-  }
-  .alignLeft {
-    text-align: left;
-  }
-  .alignRight {
-    text-align: right;
-    flex-direction: row-reverse;
-  }
-  .adalaberData {
-    width: 75%;
-    padding: 0 20px;
-  }
-}
-
-/* MARCJANNA START */
+/* .equipoLink {
+  width: 56px;
+  margin: 0 15px 0 0;
+} */
+/* .somosLink {
+  width: 121px;
+  margin: 0 15px;
+} */
+/* .contactLink {
+  width: 80px;
+  margin: 0 0 0 15px;
+} */
 
 /* HERO */
 
@@ -319,7 +122,7 @@
   width: 100%;
   /* min-width remove after reset? */
   min-width: 320px;
-  /* margin-bottom: -30px; */
+  margin-bottom: -30px;
 }
 
 .heroImage {
@@ -348,6 +151,134 @@
   position: absolute;
   bottom: 0px;
   transform: translate(0, 50%);
+}
+
+/* TEAM AND DESCRiPTION*/
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.teamContainer {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background-color: white;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.team {
+  text-align: center;
+  color: var(--brandColorLight);
+  font-size: var(--fontTitle);
+  font-family: var(--secondaryFont);
+  line-height: 45px;
+}
+.teamText {
+  justify-content: center;
+  width: 100%;
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+  letter-spacing: normal;
+  text-align: center;
+  padding: 15px 0;
+}
+.square {
+  box-sizing: border-box;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  padding-top: 0;
+  background-color: white;
+}
+
+.strengthsContainer {
+  width: 100%;
+  background-color: var(--brandBackgroundColor);
+  padding-bottom: 45px;
+}
+.strengthsWeaknesses {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.strengthsTitle {
+  text-align: center;
+  line-height: 45px;
+  font-family: var(--secondaryFont);
+  font-size: var(--fontSubtitle);
+  color: var(--brandColorDark);
+  padding-top: 30px;
+}
+.strenghsText {
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+  color: var(--fontColorDark);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* QUIENES SOMOS*/
+
+.quienesSomos {
+  margin: 45px auto;
+}
+
+.quienesSomosTitle {
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--brandColorDark);
+  font-size: var(--fontTitle);
+  font-family: var(--secondaryFont);
+  margin-bottom: 41px;
+}
+.adalaber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+}
+
+.picWrapper {
+  box-sizing: content-box;
+  border: 4px solid #eaeaea;
+  border-radius: 4px;
+  background-size: contain;
+}
+.pic {
+  width: 100%;
+  min-width: 180px;
+  max-width: 278px;
+  display: block;
+}
+.bigPic {
+  display: none;
+}
+.adalaberName {
+  font-family: var(--mainFont);
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  margin: 15px;
+}
+.adalaberData {
+  flex-wrap: wrap;
+  margin: 0 0 25px 20px;
+}
+.rrssAdalaber {
+  display: inline;
+  padding: 20px 0;
+}
+.rrss {
+  padding: 35px 5px;
+  color: var(--brandColorDark);
 }
 
 /* FOOTER */
@@ -408,7 +339,6 @@ a.navLink:hover {
   width: 115.9px;
   height: 45px;
   margin-bottom: 45px;
-  order: 1;
 }
 
 .logoFooter {
@@ -422,12 +352,32 @@ a.navLink:hover {
   }
 
   /* Aqui MEDIA TABLET de ANA B */
+  .nameTeam {
+    width: 50%;
+    text-align: start;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuTablet {
+    width: 50%;
+    display: flex;
+  }
+
+  .linkMenu {
+    padding: 0 9px;
+  }
+
+  .headingTop {
+    justify-content: flex-start;
+  }
+
+  /* MEDIA TABLET de MARCJANNA - hero */
 
   .hero {
-    width: 100%;
-    /* min-width remove after reset? */
-    min-width: 320px;
-    /* margin-bottom: -45px; */
+    margin-bottom: -45px;
   }
 
   /* .heroImage {
@@ -435,7 +385,7 @@ a.navLink:hover {
   } */
 
   .claim {
-    width: 65%;
+    width: 55%;
     background-color: rgba(255, 255, 255, 0.8);
     transform: translate(0, 0);
     padding: 15px 30px;
@@ -444,55 +394,96 @@ a.navLink:hover {
   }
 
   /* MEDIA TABLET de SAGRA */
-  @media all and (min-width: 768px) {
-    .team {
-      color: var(--brandColorDark);
-    }
-    .teamText {
-      color: var(--fontColorLight);
-      padding: 15px 45px 30px 45px;
-    }
-
-    .strengthsWeaknesses {
-      flex-direction: row;
-    }
-    .strengthsTitle {
-      padding-bottom: 15px;
-    }
+  .teamContainer {
+    margin-bottom: 30px;
+  }
+  .team {
+    color: var(--brandColorDark);
+  }
+  .teamText {
+    color: var(--fontColorLight);
+    padding-bottom: 30px;
+  }
+  .strengthsWeaknesses {
+    flex-direction: row;
+  }
+  .strengthsTitle {
+    padding: 45px 0 15px 0;
+  }
+  .strengths {
+    width: 50%;
+  }
+  /*changes in .one .two padding authorized by PO*/
+  .one {
+    padding-right: 17px;
+  }
+  .two {
+    padding-left: 17px;
   }
 
   /* Aqui MEDIA TABLET de ANA A */
+  .adalaber {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .picWrapper {
+    width: 25%;
+    max-width: 278px;
+  }
+  .pic {
+    display: none;
+  }
+  .bigPic {
+    display: block;
+    width: 100%;
+    max-width: 278px;
+  }
+  .alignLeft {
+    text-align: left;
+  }
+  .alignRight {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  .adalaberName {
+    display: inline-block;
+    margin: 0 0 15px 0;
+  }
+  .adalaberData {
+    width: 75%;
+    padding: 0 20px 67px;
+  }
+
+  /* MEDIA TABLET de MARCJANNA - footer */
 
   .footer {
     text-align: right;
+    padding-top: 24px;
+    padding-bottom: 56px;
   }
 
   .footerWrap {
-    /* height: 170px; */
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
+    height: 90px;
   }
 
   .copyright {
     width: 50%;
-    margin: 30px 0 15px;
-    /* order: 1;
-    align-self: flex-start; */
+    margin: 0px;
     text-align: left;
+    height: 50%;
   }
 
   .footerMenu {
-    /* order: 2; */
     width: 50%;
-    align-self: center;
-    position: relative;
-    transform: translate(0, 100%);
+    line-height: 30px;
+    order: 2;
   }
 
   .containerLogo {
-    order: 1;
+    margin-bottom: 0px;
+    height: 50%;
   }
 }
 
@@ -503,28 +494,38 @@ a.navLink:hover {
 
   /* Aqui MEDIA DESKTOP de ANA B */
 
+  /* MEDIA DESKTOP de MARCJANNA - hero */
+
   .heroImage {
     /* background-image: url(../images/284.png); */
     height: 550px;
   }
 
   .claim {
-    /* width: 60%; */
     font-size: var(--fontTitle);
     line-height: 1.25;
   }
 
   /* MEDIA DESKTOP de SAGRA */
-  @media all and (min-width: 1200px) {
-    .teamContainer {
-      padding: 0 300px 60px 299px;
-    }
-    .strengthsWeaknesses {
-      padding: 0 138px 60px 138px;
-    }
+  .teamContainer {
+    padding: 0 161px 60px 161px;
+  }
+  .strengthsContainer {
+    padding-bottom: 60px;
+  }
+  /*changes in .one .two padding authorized by PO*/
+  .one {
+    padding-right: 27px;
+  }
+  .two {
+    padding-left: 27px;
   }
 
   /* Aqui MEDIA DESKTOP de ANA A */
-}
 
-/* MARCJANNA END */
+  /* MEDIA DESKTOP de MARCJANNA - footer */
+
+  .footer {
+    padding-bottom: 47px;
+  }
+}
