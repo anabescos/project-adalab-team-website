@@ -156,6 +156,7 @@
 
 .team {
   text-align: center;
+  text-transform: uppercase;
   color: var(--brandColorLight);
   font-size: var(--fontTitle);
   font-family: var(--secondaryFont);
