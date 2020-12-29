@@ -39,13 +39,12 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background-color: var(--brandColorDark);
 }
 
 .headingTop {
-  /* width: 100%; */
+  width: 100%;
   height: 60px;
-  /* background-color: var(--brandColorDark); */
+  background-color: var(--brandColorDark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +53,7 @@
 
 .nameTeam {
   width: 160px;
-  height: 30px;
+  /* height: 30px; */
   font-family: var(--secondaryFont);
   font-size: 16px;
   font-weight: 500;
@@ -64,32 +63,27 @@
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* HEADER-MENU*/
 
 .menu {
   /* width: 100%; */
+  height: 45px;
   background-color: var(--brandColorLight);
   opacity: 0.9;
 }
-.menuTablet {
-  /* width: 320px; */
-  display: none;
-  opacity: 0.9;
-  align-items: center;
-  justify-content: flex-end;
-}
+
 .menuOptions {
   height: 45px;
-  list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .linkMenu {
-  height: 30px;
   font-family: var(--secondaryFont);
   color: white;
   font-size: 15px;
@@ -103,18 +97,6 @@
 .linkMenu:hover {
   color: var(--fontColorDark);
 }
-/* .equipoLink {
-  width: 56px;
-  margin: 0 15px 0 0;
-} */
-/* .somosLink {
-  width: 121px;
-  margin: 0 15px;
-} */
-/* .contactLink {
-  width: 80px;
-  margin: 0 0 0 15px;
-} */
 
 /* HERO */
 
@@ -158,6 +140,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+.teamTitle {
+  position: relative;
+  top: -120px;
 }
 .teamContainer {
   box-sizing: border-box;
@@ -214,7 +200,7 @@
   color: var(--brandColorDark);
   padding-top: 30px;
 }
-.strenghsText {
+.strengthsText {
   font-family: var(--mainFont);
   font-size: var(--fontMainText);
   color: var(--fontColorDark);
@@ -352,26 +338,34 @@ a.navLink:hover {
   }
 
   /* Aqui MEDIA TABLET de ANA B */
+  .header {
+    display: flex;
+    align-items: center;
+  }
   .nameTeam {
-    width: 50%;
     text-align: start;
   }
 
   .menu {
-    display: none;
+    /* display: none; */
+    width: 75%;
+    height: 60px;
+    background-color: var(--brandColorDark);
+    opacity: 0.95;
+    text-align: right;
   }
-
-  .menuTablet {
-    width: 50%;
-    display: flex;
+  .menuOptions {
+    height: 60px;
+    display: inline-flex;
+    justify-content: right;
   }
-
   .linkMenu {
-    padding: 0 9px;
+    padding-left: 18px;
   }
 
   .headingTop {
     justify-content: flex-start;
+    width: 25%;
   }
 
   /* MEDIA TABLET de MARCJANNA - hero */
