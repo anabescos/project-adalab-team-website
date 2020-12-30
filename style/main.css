@@ -396,7 +396,6 @@ a.navLink:hover {
     color: var(--brandColorDark);
   }
   .teamText {
-    color: var(--fontColorLight);
     padding-bottom: 30px;
   }
   .strengthsWeaknesses {
