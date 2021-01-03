@@ -397,7 +397,9 @@ a.navLink:hover {
   }
   .teamText {
     padding-bottom: 30px;
+    opacity: 67%;
   }
+
   .strengthsWeaknesses {
     flex-direction: row;
   }
