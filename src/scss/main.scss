@@ -152,7 +152,7 @@ li {
 }
 .teamTitle {
   position: relative;
-  top: -120px;
+  top: -100px;
 }
 .teamContainer {
   box-sizing: border-box;
@@ -405,7 +405,6 @@ a.navLink:hover {
     color: var(--brandColorDark);
   }
   .teamText {
-    padding-bottom: 30px;
     opacity: 67%;
   }
 
@@ -513,7 +512,7 @@ a.navLink:hover {
 
   /* MEDIA DESKTOP de SAGRA */
   .teamContainer {
-    padding: 0 161px 60px 161px;
+    padding: 0 161px 45px 161px;
   }
   .strengthsContainer {
     padding-bottom: 60px;
