@@ -26,7 +26,6 @@
 
 .pageContainer {
   margin: 0 15px;
-  /* max-width: 1400px; */
 }
 
 /* header, main, section, footer {
@@ -110,7 +109,7 @@
 .heroImage {
   width: 100%;
   height: 421px;
-  background-image: url(../images/284.png);
+  background-image: url(../images/heroIndexMobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -375,9 +374,9 @@ a.navLink:hover {
     margin-bottom: -45px;
   }
 
-  /* .heroImage {
-    background-image: url(../images/284.png);
-  } */
+  .heroImage {
+    background-image: url(../images/heroIndexTablet.png);
+  }
 
   .claim {
     width: 55%;
@@ -493,7 +492,7 @@ a.navLink:hover {
   /* MEDIA DESKTOP de MARCJANNA - hero */
 
   .heroImage {
-    /* background-image: url(../images/284.png); */
+    background-image: url(../images/heroIndexDesktop.png);
     height: 550px;
   }
 
