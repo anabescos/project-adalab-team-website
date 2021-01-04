@@ -270,10 +270,10 @@ li {
 }
 .rrssAdalaber {
   display: inline;
-  padding: 20px 0;
+  // padding: 20px 0;
 }
 .rrss {
-  padding: 35px 5px;
+  padding: 15px 5px 0 0;
   color: var(--brandColorDark);
 }
 
@@ -455,7 +455,7 @@ a.navLink:hover {
   }
   .adalaberData {
     width: 75%;
-    padding: 0 20px 67px;
+    padding: 0 20px 35px;
   }
 
   /* MEDIA TABLET de MARCJANNA - footer */
