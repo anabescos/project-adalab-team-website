@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+/* End Reset */
+:root {
+  font-size: 16px;
+
+  /* colors */
+  --brandColorDark: #099d8d;
+  --brandColorLight: #14d9c4;
+  --fontColorDark: #54585a;
+  --fontColorLight: #b8b8b9;
+  --brandBackgroundColor: #f1f1f1;
+
+  /* fonts */
+  --mainFont: "Open Sans", sans-serif;
+  --secondaryFont: "Rubik", sans-serif;
+
+  /* font-size: */
+  --fontSmall: 0.875rem;
+  --fontMainText: 1rem;
+  --fontTitle: 1.5rem;
+  --fontSubtitle: 1.375rem;
+}
+
+* {
+  /* font-family: "Open Sans", sans-serif; */
+  color: var(--fontColorDark);
+}
+
+.pageContainer {
+  margin: 0 15px;
+}
+
+/* header, main, section, footer {
+    min-width: 320px;
+  } */
+
+/* HEADER-TITLE*/
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.headingTop {
+  width: 100%;
+  height: 60px;
+  background-color: var(--brandColorDark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.95;
+}
+
+.nameTeam {
+  width: 160px;
+  /* height: 30px; */
+  font-family: var(--secondaryFont);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* HEADER-MENU*/
+
+.menu {
+  /* width: 100%; */
+  height: 45px;
+  background-color: var(--brandColorLight);
+  opacity: 0.9;
+}
+
+.menuOptions {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.linkMenu {
+  font-family: var(--secondaryFont);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+.linkMenu:hover {
+  color: var(--fontColorDark);
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  /* min-width remove after reset? */
+  min-width: 320px;
+  margin-bottom: 76px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 421px;
+  background-image: url(../images/heroIndexMobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -10;
+}
+
+.claim {
+  color: black;
+  background-color: #ffffff;
+  width: calc(100% - 30px);
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.39;
+  position: absolute;
+  bottom: 0px;
+  transform: translate(0, 56%);
+}
+
+/* TEAM AND DESCRiPTION*/
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.teamTitle {
+  position: relative;
+  top: -120px;
+}
+.teamContainer {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background-color: white;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.team {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brandColorLight);
+  font-size: var(--fontTitle);
+  font-family: var(--secondaryFont);
+  line-height: 45px;
+}
+.teamText {
+  justify-content: center;
+  width: 100%;
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+  letter-spacing: normal;
+  text-align: center;
+  padding: 15px 0;
+}
+.square {
+  box-sizing: border-box;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  padding-top: 0;
+  background-color: white;
+}
+
+.strengthsContainer {
+  width: 100%;
+  background-color: var(--brandBackgroundColor);
+  padding-bottom: 45px;
+}
+.strengthsWeaknesses {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.strengthsTitle {
+  text-align: center;
+  line-height: 45px;
+  font-family: var(--secondaryFont);
+  font-size: var(--fontSubtitle);
+  color: var(--brandColorDark);
+  padding-top: 30px;
+}
+.strengthsText {
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+  color: var(--fontColorDark);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* QUIENES SOMOS*/
+
+.quienesSomos {
+  margin: 45px auto;
+}
+
+.quienesSomosTitle {
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--brandColorDark);
+  font-size: var(--fontTitle);
+  font-family: var(--secondaryFont);
+  margin-bottom: 41px;
+}
+.adalaber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: var(--mainFont);
+  font-size: var(--fontMainText);
+}
+
+.picWrapper {
+  box-sizing: content-box;
+  border: 4px solid #eaeaea;
+  border-radius: 4px;
+  background-size: contain;
+}
+.pic {
+  width: 100%;
+  min-width: 180px;
+  max-width: 278px;
+  display: block;
+}
+.bigPic {
+  display: none;
+}
+.adalaberName {
+  font-family: var(--mainFont);
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  margin: 15px;
+}
+.adalaberData {
+  flex-wrap: wrap;
+  margin: 0 0 25px 20px;
+}
+.rrssAdalaber {
+  display: inline;
+  padding: 20px 0;
+}
+.rrss {
+  padding: 35px 5px;
+  color: var(--brandColorDark);
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* position only needed if I use .footer:before afterall */
+}
+
+.footer:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: " ";
+  background-color: var(--fontColorLight);
+}
+
+.footerWrap {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerFont {
+  font-family: var(--mainFont);
+  font-size: var(--fontSmall);
+  line-height: 1.43;
+}
+
+.copyright {
+  margin: 30px 0 20px;
+  color: var(--fontColorLight);
+}
+
+.footerMenu {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+a.navLink,
+a.navLink:visited {
+  color: var(--fontColorDark);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.navLink:hover {
+  background-color: var(--brandColorDark);
+  color: white;
+}
+
+.containerLogo {
+  width: 115.9px;
+  height: 45px;
+  margin-bottom: 45px;
+}
+
+.logoFooter {
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .pageContainer {
+    margin: 0px 46px;
+  }
+
+  /* Aqui MEDIA TABLET de ANA B */
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .nameTeam {
+    text-align: start;
+  }
+
+  .menu {
+    /* display: none; */
+    width: 75%;
+    height: 60px;
+    background-color: var(--brandColorDark);
+    opacity: 0.95;
+    text-align: right;
+  }
+  .menuOptions {
+    height: 60px;
+    display: inline-flex;
+    justify-content: right;
+  }
+  .linkMenu {
+    padding-left: 18px;
+  }
+
+  .headingTop {
+    justify-content: flex-start;
+    width: 25%;
+  }
+
+  /* MEDIA TABLET de MARCJANNA - hero */
+
+  .hero {
+    margin-bottom: 45px;
+  }
+
+  .heroImage {
+    background-image: url(../images/heroIndexTablet.png);
+  }
+
+  .claim {
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translate(0, 0);
+    padding: 15px 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+  /* MEDIA TABLET de SAGRA */
+  .teamContainer {
+    margin-bottom: 30px;
+  }
+  .team {
+    color: var(--brandColorDark);
+  }
+  .teamText {
+    padding-bottom: 30px;
+    opacity: 67%;
+  }
+
+  .strengthsWeaknesses {
+    flex-direction: row;
+  }
+  .strengthsTitle {
+    padding: 45px 0 15px 0;
+  }
+  .strengths {
+    width: 50%;
+  }
+  /*changes in .one .two padding authorized by PO*/
+  .one {
+    padding-right: 17px;
+  }
+  .two {
+    padding-left: 17px;
+  }
+
+  /* Aqui MEDIA TABLET de ANA A */
+  .adalaber {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .picWrapper {
+    width: 25%;
+    max-width: 278px;
+  }
+  .pic {
+    display: none;
+  }
+  .bigPic {
+    display: block;
+    width: 100%;
+    max-width: 278px;
+  }
+  .alignLeft {
+    text-align: left;
+  }
+  .alignRight {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  .adalaberName {
+    display: inline-block;
+    margin: 0 0 15px 0;
+  }
+  .adalaberData {
+    width: 75%;
+    padding: 0 20px 67px;
+  }
+
+  /* MEDIA TABLET de MARCJANNA - footer */
+
+  .footer {
+    text-align: right;
+    padding-top: 24px;
+    padding-bottom: 56px;
+  }
+
+  .footerWrap {
+    align-items: baseline;
+    flex-wrap: wrap;
+    height: 90px;
+  }
+
+  .copyright {
+    width: 50%;
+    margin: 0px;
+    text-align: left;
+    height: 50%;
+  }
+
+  .footerMenu {
+    width: 50%;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .containerLogo {
+    margin-bottom: 0px;
+    height: 50%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .pageContainer {
+    margin: 0px 138px;
+  }
+
+  /* Aqui MEDIA DESKTOP de ANA B */
+
+  /* MEDIA DESKTOP de MARCJANNA - hero */
+
+  .heroImage {
+    background-image: url(../images/heroIndexDesktop.png);
+    height: 550px;
+  }
+
+  .claim {
+    font-size: var(--fontTitle);
+    line-height: 1.25;
+  }
+
+  /* MEDIA DESKTOP de SAGRA */
+  .teamContainer {
+    padding: 0 161px 60px 161px;
+  }
+  .strengthsContainer {
+    padding-bottom: 60px;
+  }
+  /*changes in .one .two padding authorized by PO*/
+  .one {
+    padding-right: 27px;
+  }
+  .two {
+    padding-left: 27px;
+  }
+
+  /* Aqui MEDIA DESKTOP de ANA A */
+
+  /* MEDIA DESKTOP de MARCJANNA - footer */
+
+  .footer {
+    padding-bottom: 47px;
+  }
+}
