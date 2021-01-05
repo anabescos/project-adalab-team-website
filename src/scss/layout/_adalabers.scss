@@ -1,0 +1,91 @@
+
+.quienesSomos {
+    margin: 45px auto;
+  }
+  
+  .quienesSomosTitle {
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--brandColorDark);
+    font-size: var(--fontTitle);
+    font-family: var(--secondaryFont);
+    margin-bottom: 41px;
+  }
+  .adalaber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--mainFont);
+    font-size: var(--fontMainText);
+  }
+  
+  .picWrapper {
+    box-sizing: content-box;
+    border: 4px solid #eaeaea;
+    border-radius: 4px;
+    background-size: contain;
+  }
+  .pic {
+    width: 100%;
+    min-width: 180px;
+    max-width: 278px;
+    display: block;
+  }
+  .bigPic {
+    display: none;
+  }
+  .adalaberName {
+    font-family: var(--mainFont);
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    margin: 15px;
+  }
+  .adalaberData {
+    flex-wrap: wrap;
+    margin: 0 0 25px 20px;
+  }
+  .rrssAdalaber {
+    display: inline;
+    // padding: 20px 0;
+  }
+  .rrss {
+    padding: 15px 5px 0 0;
+    color: var(--brandColorDark);
+  }
+  @media all and (min-width: 768px) {
+
+    .adalaber {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .picWrapper {
+      width: 25%;
+      max-width: 278px;
+    }
+    .pic {
+      display: none;
+    }
+    .bigPic {
+      display: block;
+      width: 100%;
+      max-width: 278px;
+    }
+    .alignLeft {
+      text-align: left;
+    }
+    .alignRight {
+      text-align: right;
+      flex-direction: row-reverse;
+    }
+    .adalaberName {
+      display: inline-block;
+      margin: 0 0 15px 0;
+    }
+    .adalaberData {
+      width: 75%;
+      padding: 0 20px 35px;
+    }
+  }

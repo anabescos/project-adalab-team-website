@@ -1,0 +1,14 @@
+.pageContainer {
+  margin: 0 15px;
+}
+
+@media all and (min-width: 768px) {
+.pageContainer {
+  margin: 0px 46px;
+}
+}
+@media all and (min-width: 1200px) {
+  .pageContainer {
+    margin: 0px 138px;
+  }
+}
