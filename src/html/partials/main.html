@@ -1,40 +1,241 @@
-<main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <include
-        src="./link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      ></include>
-    </li>
-    <li>
-      <include src="./link.html" text="Más info del starter kit" url="./more-info.html"></include>
-    </li>
-  </ul>
+<main>
+  <!-- hero -->
+
+  <include src="./hero.html"></include>
+
+  <!--  TEAM and description-->
+  <include src="./team.html"></include>
+  <!-- adalabers / quienes somos -->
+  <section class="quienesSomos">
+    <span id="quienesSomos" class="teamTitle"></span>
+    <h2 class="quienesSomosTitle">Quiénes somos</h2>
+    <div class="pageContainer">
+      <article class="adalaber alignLeft">
+        <figure class="picWrapper">
+          <img
+            class="pic"
+            src="./assets/images/marcjanna180x180.jpg"
+            alt="Marcjanna Stopińska"
+          />
+          <img
+            class="bigPic"
+            src="./assets/images/marcjanna300x300ok.jpg"
+            alt="Marcjanna Stopińska"
+          />
+        </figure>
+        <div class="adalaberData">
+          <h3 class="adalaberName">Marcjanna Stopińska</h3>
+          <p>
+            Desarrolladora fullstack, especializada en frontend (VueJS y React),
+            orientada a la entrega con éxito de proyectos. Aplico buenas
+            prácticas, intentando mantener el código entendible y sencillo.
+            Asumo el liderazgo de forma natural, fomentando el trabajo en equipo
+            y el intercambio de conocimientos, con gran capacidad para gestionar
+            tiempo y recursos. Sigo en continuo aprendizaje aplicando los
+            conceptos a un proyecto propio: una webapp (VueJS) para que los
+            profesores de primaria generen ejercicios personalizados. Hablo
+            Inglés, Español y Polaco.
+          </p>
+          <ul>
+            <li class="rrssAdalaber">
+              <a href="https://twitter.com/marcjanna_s" target="_blank"
+                ><i class="fab fa-twitter rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a
+                href="http://www.linkedin.com/in/marcjanna-stopinska"
+                target="_blank"
+                ><i class="fab fa-linkedin-in rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="https://github.com/marcjnn" target="_blank"
+                ><i class="fab fa-github-alt rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="mailto:marcjanna.stopinska@gmail.com" target="_blank"
+                ><i class="fas fa-envelope rrss"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="adalaber alignRight">
+        <figure class="picWrapper">
+          <img
+            class="pic"
+            src="./assets/images/ana_bescos180x180.jpg"
+            alt="Ana Bescós"
+          />
+          <img
+            class="bigPic"
+            src="./assets/images/ana_bescos300x300.jpg"
+            alt="Ana Bescós"
+          />
+        </figure>
+        <div class="adalaberData">
+          <h3 class="adalaberName">Ana Bescós</h3>
+          <p>
+            Gracias a mi experiencia laboral como docente internacional, he
+            desarrollado un amplio rango de habilidades transferibles a mi nueva
+            profesión como Web developer. Mi interés por la lingüística y la
+            terapia en el ámbito educativo me llevaron a estudiar Audición y
+            Lenguaje, para más tarde profundizar en la enseñanza de las lenguas
+            inglesa y española. Ésto me permitió ejercer la docencia en Londres
+            durante 7 años, adoptando diversos roles en diferentes
+            departamentos, incluyendo el de coordinadora. En ese ambiente
+            profesional internacional pude desarrollar múltiples habilidades
+            como la comunicación, la adaptabilidad, el manejo del estrés, el
+            trabajo en equipo, la inteligencia emocional y el dominio de la
+            lengua inglesa a nivel profesional. Durante este último año he
+            estado inmersa en la creación de un proyecto educativo dirigido al
+            aprendizaje de idiomas online. Fue entonces cuando descubrí el mundo
+            de la programación y sus conexiones con la lingüística. Todas esas
+            inquietudes y mis ganas de afrontar nuevos retos me hicieron empezar
+            a indagar en este sector y encontrar así mi nueva profesión.
+          </p>
+          <ul>
+            <li class="rrssAdalaber">
+              <a href="https://twitter.com/Ana_Bescos_" target="_blank"
+                ><i class="fab fa-twitter rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a
+                href="https://www.linkedin.com/in/ana-besc%C3%B3s-19483b201/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="https://github.com/anabescos" target="_blank"
+                ><i class="fab fa-github-alt rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="mailto:anabes88@gmail.com" target="_blank"
+                ><i class="fas fa-envelope rrss"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="adalaber alignLeft">
+        <figure class="picWrapper">
+          <img
+            class="pic"
+            src="./assets/images/sagra_mielgo180x180.jpg"
+            alt="Sagra Mielgo"
+          />
+          <img
+            class="bigPic"
+            src="./assets/images/sagra_mielgo300x300.jpg"
+            alt="Sagra Mielgo"
+          />
+        </figure>
+        <div class="adalaberData">
+          <h3 class="adalaberName">Sagra Mielgo</h3>
+          <p>
+            De pequeña quería ser cantante y astronauta. Con esfuerzo y
+            dedicación me formé en Filología, canto, música y teatro; mi
+            trayectoria profesional ha estado ligada a la comunicación, tv y
+            radio. He viajado por todo el mundo, y trabajado en Japón,
+            Argentina, Inglaterra y múltiples ciudades españolas. Curiosa y
+            amante de la diversidad cultural y la lingüística comparada. De
+            forma autodidacta comencé a editar mi propio material audiovisual,
+            mi ordenador se convirtió en mi compañero de viaje. Soy tenaz y
+            comprometida. ¡Conseguí correr la Maratón de Madrid! Todas estas
+            experiencias me han ayudado a desarrollar habilidades técnicas y de
+            gestión, así como adaptabilidad y empatía para entender las
+            necesidades de cada proyecto. He superado adversidades con ayuda de
+            los demás, por eso, en el trabajo y en la vida, creo en el equipo.
+            Adalab me brindó la oportunidad de crecer y evolucionar. Despego
+            como front-ender con todo el entusiasmo del mundo. Houston, comienza
+            la cuenta atrás.
+          </p>
+          <ul>
+            <li class="rrssAdalaber">
+              <a href="https://twitter.com/sagramielgo" target="_blank"
+                ><i class="fab fa-twitter rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="https://www.linkedin.com/in/sagramielgo" target="_blank"
+                ><i class="fab fa-linkedin-in rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="https://github.com/Sagramielgo" target="_blank"
+                ><i class="fab fa-github-alt rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="mailto:sagramielgo@gmail.com" target="_blank"
+                ><i class="fas fa-envelope rrss"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="adalaber alignRight">
+        <figure class="picWrapper">
+          <img
+            class="pic"
+            src="./assets/images/ana_apezteguia180x180.jpg"
+            alt="Ana Apezteguía"
+          />
+          <img
+            class="bigPic"
+            src="./assets/images/ana_apezteguia300x300.jpg"
+            alt="Ana Apezteguía"
+          />
+        </figure>
+        <div class="adalaberData">
+          <h3 class="adalaberName">Ana Apezteguía</h3>
+          <p>
+            Apasionada, meticulosa, temperamental, determinada… Me enseñaron a
+            tener inquietud, buscar soluciones y poner pasión en todo lo que
+            emprendo - sea a nivel personal o profesional-, actitudes que me
+            completan y definen. Soy diseñadora gráfica desde 1999,
+            especializada en imagen corporativa y diseño editorial. Me apasiona
+            el branding bien hecho y por eso en 2019 cursé el máster en
+            Challenging Branding de LaBasad, donde conocí a profesionales
+            maravillosos y aprendí muchísimo, tanto de branding como de mi
+            misma. He trabajado para empresas fuera del sector de la
+            comunicación, para agencias de publicidad medianas y pequeñas en
+            Pamplona, hice una pequeña incursión en el mundo freelance… en
+            definitiva, soy una todoterreno dentro del diseño gráfico offline.
+            En constante evolución, he decidido redirigir mi vida y complementar
+            mi carrera profesional como #adalaber.
+          </p>
+          <ul>
+            <li class="rrssAdalaber">
+              <a href="https://twitter.com/anadisena" target="_blank"
+                ><i class="fab fa-twitter rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a
+                href="https://es.linkedin.com/in/anaapezteguiamartinez"
+                target="_blank"
+                ><i class="fab fa-linkedin-in rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="https://github.com/anaapezteguia" target="_blank"
+                ><i class="fab fa-github-alt rrss"></i></a
+              >·
+            </li>
+            <li class="rrssAdalaber">
+              <a href="mailto:ana.apezteguia@gmail.com" target="_blank"
+                ><i class="fas fa-envelope rrss"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
 </main>
