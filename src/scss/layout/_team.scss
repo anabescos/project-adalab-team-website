@@ -1,13 +1,8 @@
-
 /* TEAM AND DESCRiPTION*/
 .mainContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-.teamTitle {
-  position: relative;
-  top: -100px;
 }
 .teamContainer {
   box-sizing: border-box;
@@ -34,6 +29,9 @@
   letter-spacing: normal;
   text-align: center;
   padding: 15px 0;
+}
+.devText {
+  display: block;
 }
 .square {
   box-sizing: border-box;
@@ -74,7 +72,6 @@
 }
 
 @media all and (min-width: 768px) {
-
   .teamContainer {
     margin-bottom: 30px;
   }
@@ -103,12 +100,11 @@
 }
 
 @media all and (min-width: 1200px) {
-  
   .teamContainer {
     padding: 0 161px 45px 161px;
     margin-bottom: 0;
   }
-  
+
   .strengthsContainer {
     padding-bottom: 60px;
   }
