@@ -1,0 +1,62 @@
+.hero {
+  width: 100%;
+  /* min-width remove after reset? */
+  min-width: 320px;
+  margin-bottom: 76px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 421px;
+  background-image: url(../images/heroIndexMobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -10;
+}
+
+.claim {
+  color: black;
+  background-color: #ffffff;
+  width: calc(100% - 30px);
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.39;
+  position: absolute;
+  bottom: 0px;
+  transform: translate(0, 56%);
+}
+
+@media all and (min-width: 768px) {
+  .hero {
+    margin-bottom: 45px;
+  }
+
+  .heroImage {
+    background-image: url(../images/heroIndexTablet.png);
+  }
+
+  .claim {
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translate(0, 0);
+    padding: 15px 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .heroImage {
+    background-image: url(../images/heroIndexDesktop.png);
+    height: 550px;
+  }
+
+  .claim {
+    font-size: var(--fontTitle);
+    line-height: 1.25;
+  }
+}
