@@ -19,14 +19,12 @@
     margin-bottom: 0;
   }
   &__team {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: var(--brandColorLight);
-    font-size: var(--fontTitle);
-    font-family: var(--secondaryFont);
-    line-height: 45px;
-    scroll-margin-top: 120px;
+    @include title {
+      text-transform: uppercase;
+      color: var(--brandColorLight);
+      font-size: var(--fontTitle);
+      scroll-margin-top: 120px;
+    }
     @media all and (min-width: 768px) {
       color: var(--brandColorDark);
       scroll-margin-top: 100px;

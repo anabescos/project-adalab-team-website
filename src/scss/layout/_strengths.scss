@@ -43,13 +43,12 @@
       }
     }
     &--title {
-      text-align: center;
-      line-height: 45px;
-      font-family: var(--secondaryFont);
-      font-size: var(--fontSubtitle);
-      color: var(--brandColorDark);
-      padding-top: 30px;
-      font-weight: 500;
+      @include title {
+        color: var(--brandColorDark);
+        font-size: var(--fontSubtitle);
+        padding-top: 30px;
+      }
+
       @media all and (min-width: 768px) {
         padding: 45px 0 15px 0;
       }
