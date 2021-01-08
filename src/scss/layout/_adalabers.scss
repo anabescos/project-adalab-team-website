@@ -11,6 +11,7 @@
   font-family: var(--secondaryFont);
   margin-bottom: 41px;
   font-weight: 500;
+  scroll-margin-top: 120px;
 }
 .adalaber {
   display: flex;
@@ -56,6 +57,9 @@
   color: var(--brandColorDark);
 }
 @media all and (min-width: 768px) {
+  .quienesSomosTitle {
+    scroll-margin-top: 100px;
+  }
   .adalaber {
     flex-direction: row;
     align-items: flex-start;

@@ -26,8 +26,10 @@
     font-size: var(--fontTitle);
     font-family: var(--secondaryFont);
     line-height: 45px;
+    scroll-margin-top: 120px;
     @media all and (min-width: 768px) {
       color: var(--brandColorDark);
+      scroll-margin-top: 100px;
     }
   }
   &__text {
