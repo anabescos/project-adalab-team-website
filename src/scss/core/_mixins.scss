@@ -1,0 +1,26 @@
+@mixin title {
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--secondaryFont);
+  line-height: 45px;
+  @content;
+}
+
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin menuLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2px 0px;
+  @content;
+}

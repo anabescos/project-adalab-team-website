@@ -1,7 +1,0 @@
-@mixin title {
-  text-align: center;
-  font-weight: 500;
-  font-family: var(--secondaryFont);
-  line-height: 45px;
-  @content;
-}

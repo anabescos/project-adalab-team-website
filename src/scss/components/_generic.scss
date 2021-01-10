@@ -1,14 +1,14 @@
 .pageContainer {
   margin: 0 15px;
-}
-
-@media all and (min-width: 768px) {
-  .pageContainer {
+  @include tablet {
     margin: 0px 46px;
   }
-}
-@media all and (min-width: 1200px) {
-  .pageContainer {
+  @include desktop {
     margin: 0px 138px;
+  }
+  // check with large screen
+  @media all and (min-width: 1476px) {
+    margin: 0px auto;
+    max-width: 1200px;
   }
 }

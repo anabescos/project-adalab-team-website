@@ -3,12 +3,12 @@
   text-align: center;
   position: relative;
   /* position only needed if I use .footer:before afterall */
-  @media all and (min-width: 768px) {
+  @include tablet {
     text-align: right;
     padding-top: 24px;
     padding-bottom: 56px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding-bottom: 47px;
   }
   &:before {
@@ -20,61 +20,56 @@
     content: " ";
     background-color: var(--fontColorLight);
   }
-}
-
-.footerWrap {
-  /* width: 100%; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: var(--fontSmall);
-  line-height: 1.43;
-  @media all and (min-width: 768px) {
-    align-items: baseline;
-    flex-wrap: wrap;
-    height: 90px;
-  }
-  .copyright {
+  &__copyright {
     margin: 30px 0 20px;
     color: var(--fontColorLight);
-    @media all and (min-width: 768px) {
+    @include tablet {
       width: 50%;
       margin: 0px;
       text-align: left;
       height: 50%;
     }
   }
-  .footerMenu {
+  .menu {
     margin-bottom: 30px;
-    font-weight: 600;
-    @media all and (min-width: 768px) {
+    @include tablet {
       width: 50%;
       line-height: 30px;
       order: 2;
     }
-    .navLink,
-    .navLink:visited {
+    &__link {
+      @include menuLink;
+      font-weight: 600;
       color: var(--fontColorDark);
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-
-    .navLink:hover {
-      background-color: var(--brandColorDark);
-      color: white;
+      &:hover {
+        color: var(--brandColorDark);
+      }
     }
   }
-  .containerLogo {
+  &__logo {
     width: 115.9px;
     height: 45px;
     margin-bottom: 45px;
-    @media all and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 0px;
       height: 50%;
     }
-    .logoFooter {
+    &--img {
       width: 100%;
       height: 100%;
+    }
+  }
+  &__wrap {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--fontSmall);
+    line-height: 1.43;
+    @include tablet {
+      align-items: baseline;
+      flex-wrap: wrap;
+      height: 90px;
     }
   }
 }

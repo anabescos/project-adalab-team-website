@@ -1,6 +1,6 @@
 @import "core/reset";
 @import "core/variables";
-@import "core/functions";
+@import "core/mixins";
 @import "components/generic";
 @import "layout/header";
 @import "layout/hero";
@@ -8,5 +8,4 @@
 @import "layout/strengths";
 @import "layout/adalabers";
 @import "layout/footer";
-@import "pages/contact";
 @import "layout/form";
