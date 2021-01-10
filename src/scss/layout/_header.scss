@@ -24,12 +24,9 @@
       font-size: 16px;
       font-weight: 500;
       color: white;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.88;
-      letter-spacing: normal;
       text-align: center;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       @media all and (min-width: 768px) {
         text-align: start;
       }
@@ -42,33 +39,32 @@
       align-items: center;
     }
   }
+  .menu {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      height: 60px;
+      justify-content: right;
+    }
+    &__link {
+      @include menuLink;
+      font-family: var(--secondaryFont);
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 2;
+      @media all and (min-width: 768px) {
+        padding-left: 18px;
+      }
+      &:hover {
+        color: var(--fontColorDark);
+      }
+    }
+  }
 }
 
-/* HEADER-MENU*/
-
-.menu {
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
-  @media all and (min-width: 768px) {
-    height: 60px;
-    display: inline-flex;
-    justify-content: right;
-  }
-  &__link {
-    font-family: var(--secondaryFont);
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 2;
-    @media all and (min-width: 768px) {
-      padding-left: 18px;
-    }
-    &:hover {
-      color: var(--fontColorDark);
-    }
-  }
+.header__logo .menu__link:first-child {
+  padding-left: 0px;
 }
