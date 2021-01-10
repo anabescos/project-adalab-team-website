@@ -1,0 +1,42 @@
+.signup {
+  display: block;
+  width: 290px;
+  height: 45px;
+  margin: 7px 0 13px;
+  padding: 7px 57px 15px 15px;
+  border: solid 1px #b8b8b9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.required::after {
+  content: "*";
+  color: #14d9c4;
+}
+label {
+  width: 131px;
+  height: 19px;
+  margin: 58px 159px 7px 0;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  color: #54585a;
+}
+.placeholder {
+}
+
+.form_button {
+  width: 290px;
+  height: 45px;
+  margin: 30px 0 0;
+  padding: 11px 158px 12px 74px;
+  border-radius: 4px;
+  background-color: #099d8d;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  /* font-family: Rubik; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
