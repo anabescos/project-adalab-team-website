@@ -1,41 +1,23 @@
 <form action="https://formspree.io/f/mvovdalw" method="post">
   <div class="form__wrapper">
-    <label class="required label" for="firstName">Nombre completo</label>
-    <input
-      placeholder="Nombre..."
-      id="firstName"
-      type="text"
-      name="firstName"
-      required
-      class="signup placeholder"
-    />
-    <label class="required label" for="emailAddress">Correo electrónico</label>
-    <input
-      type="email"
-      placeholder="nombre.apellidos@mail.com"
-      id="emailAddress"
-      name="emailAddress"
-      required
-      class="signup placeholder"
-    />
-    <label class="label" for="telephone">Teléfono</label>
-    <input
-      placeholder="Ej:123456789"
-      type="tel"
-      id="telephone"
-      name="telephone"
-      class="signup placeholder"
-    />
-    <label class="required label" for="comments">Mensaje</label>
-    <textarea
-      placeholder="¿Qué necesitas?"
-      id="comments"
-      name="comments"
-      rows="7"
-      cols="50"
-      required
-      class="signup placeholder"
-    ></textarea>
+    <div>
+      <label class="required label" for="firstName">Nombre completo</label>
+      <input placeholder="Nombre..." id="firstName" type="text" name="firstName" required class="signup placeholder" />
+    </div>
+    <div>
+      <label class="required label" for="emailAddress">Correo electrónico</label>
+      <input type="email" placeholder="nombre.apellidos@mail.com" id="emailAddress" name="emailAddress" required
+        class="signup placeholder" />
+    </div>
+    <div>
+      <label class="label" for="telephone">Teléfono</label>
+      <input placeholder="Ej:123456789" type="tel" id="telephone" name="telephone" class="signup placeholder" />
+    </div>
+    <div>
+      <label class="required label" for="comments">Mensaje</label>
+      <textarea placeholder="¿Qué necesitas?" id="comments" name="comments" rows="7" cols="50" required
+        class="signup placeholder"></textarea>
+    </div>
     <input type="submit" value="Enviar" class="form_button" />
   </div>
 </form>
