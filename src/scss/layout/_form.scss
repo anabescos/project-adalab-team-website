@@ -37,11 +37,11 @@
   content: "*";
   color: var(--brandColorLight);
 }
-label {
+.label {
   width: 131px;
   height: 19px;
   margin: 58px 159px 7px 0;
-  font-family: OpenSans;
+  /*font-family: OpenSans;*/
   font-size: 14px;
   font-weight: normal;
   color: var(--fontColorDark);
@@ -53,6 +53,7 @@ label {
   margin: 30px 0 60px 0;
   /* padding: 11px 158px 12px 74px; */
   border-radius: 4px;
+  border: none;
   background-color: var(--brandColorDark);
   color: #ffffff;
   text-transform: uppercase;
