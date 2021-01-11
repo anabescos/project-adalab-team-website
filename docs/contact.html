@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome css-->
+    <!-- <link rel="stylesheet" href="./assets/css/all.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/f2e0e49a34.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./style/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>devRockets @ Adalab</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__tablet pageContainer">
+        <div class="header__logo">
+          <h1 class="header__logo--text">
+            <a class="menu__link" href="index.html">Devrockets</h1> </a>
+        </div>
+        <nav >
+          <ul class="menu">
+            <li>
+              <a class="menu__link" href="index.html#teamTitle">Equipo</a>
+            </li>
+            <li>
+              <a class="menu__link" href="index.html#quienesSomos">Quiénes somos</a>
+            </li>
+            <li>
+              <a class="menu__link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero no claim -->
+    <section class="hero hero__contact">
+      <div class="pageContainer">
+        <h2 class="claim">
+          La inteligencia es la capacidad de adaptarse al cambio. Con devRockets, el
+          cambio empieza hoy.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <div class="pageContainer contactContainer">
+      <article>
+        <h2 id="teamTitle" class="teamContainer__team">Contacto</h2>
+        <p class="teamContainer__text">
+          Sería estupendo saber de tí. Si quieres contactar con nosotras estaremos
+          encantadas de escuchar tus sugerencias, resolver tus dudas o comenzar a
+          trabajar en tu proyecto. Escríbenos y te responderemos lo antes posible.
+          <span class="welcome"
+            >¡Bienvenido a devRocket <span class="world">world!</span></span
+          >
+        </p>
+        <small class="contact__small"
+          >Todos los cambios marcados con <span class="asterisk">*</span> son
+          obligatorios</small
+        >
+      </article>
+      <form action="https://formspree.io/f/mvovdalw" method="post">
+        <div class="form__wrapper">
+          <div class="input__wrapper">
+            <label class="required label" for="firstName">Nombre completo</label>
+            <input
+              placeholder="Nombre..."
+              id="firstName"
+              type="text"
+              name="firstName"
+              required
+              class="signup placeholder"
+            />
+          </div>
+          <div class="input__wrapper">
+            <label class="required label" for="emailAddress"
+              >Correo electrónico</label
+            >
+            <input
+              type="email"
+              placeholder="nombre.apellidos@mail.com"
+              id="emailAddress"
+              name="emailAddress"
+              required
+              class="signup placeholder"
+            />
+          </div>
+          <div class="input__wrapper">
+            <label class="label" for="telephone">Teléfono</label>
+            <input
+              placeholder="Ej:123456789"
+              type="tel"
+              id="telephone"
+              name="telephone"
+              class="signup placeholder"
+            />
+          </div>
+          <div class="input__wrapper">
+            <label class="required label" for="comments">Mensaje</label>
+            <textarea
+              placeholder="¿Qué necesitas?"
+              id="comments"
+              name="comments"
+              rows="7"
+              cols="50"
+              required
+              class="signup signup--textarea placeholder"
+            ></textarea>
+          </div>
+          <input type="submit" value="Enviar" class="form_button" />
+        </div>
+      </form>
+
+    </div>
+
+    <!-- Contact Form -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="pageContainer footer__wrap">
+        <p class="footer__copyright">devRockets © 2021</p>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="menu__link" href="index.html#teamTitle">Equipo</a>
+            </li>
+            <li>
+              <a class="menu__link" href="index.html#quienesSomos">Quiénes somos</a>
+            </li>
+            <li><a class="menu__link" href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <figure class="footer__logo">
+          <img
+            class="footer__logo--img"
+            src="./assets/images/adalab-logo.png"
+            alt="logo Adalab"
+          />
+        </figure>
+      </div>
+    </footer>
+
+  </body>
+</html>

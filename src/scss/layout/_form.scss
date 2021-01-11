@@ -1,7 +1,21 @@
+.contactContainer {
+  margin: 0 15px;
+  @include tablet {
+    margin: 0px 163px;
+  }
+  @include desktop {
+    margin: 0px 299px;
+  }
+  // check with large screen
+  // @media all and (min-width: 1476px) {
+  //   margin: 0px auto;
+  //   max-width: 1200px;
+  // }
+}
+
 .contact__small {
-  font-size: 12px;
+  @include text(12px, 1.5);
   color: var(--fontColorDark);
-  line-height: 24px;
   display: block;
   text-align: center;
 }
@@ -22,19 +36,44 @@
   align-items: center;
   margin-top: 3.625rem;
 }
+
+.input__wrapper {
+  width: 100%;
+  &--email {
+    @include desktop {
+      align-self: flex-start;
+      width: 75%;
+    }
+  }
+  &--phone {
+    @include desktop {
+      align-self: flex-end;
+      width: 25%;
+    }
+  }
+}
+
 .signup {
   display: block;
-  width: 290px;
+  color: var(--fontColorDark);
+  @include text(var(--fontMainText), normal);
+  width: 100%;
   height: 45px;
   margin: 7px 0 13px;
-  padding: 7px 57px 15px 15px;
+  padding: 7px 15px;
   border: solid 1px var(--fontColorLight);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  // @include tablet {
+  //   width: 442px;
+  // }
+  &--textarea {
+    height: 105px;
+  }
 }
 .required::after {
-  content: "*";
+  content: " *";
   color: var(--brandColorLight);
 }
 .label {
@@ -42,9 +81,14 @@
   height: 19px;
   margin: 58px 159px 7px 0;
   /*font-family: OpenSans;*/
-  font-size: 14px;
-  font-weight: normal;
+  @include text(var(--fontSmall), normal);
+  // font-weight: normal;
   color: var(--fontColorDark);
+}
+
+.placeholder::placeholder {
+  color: var(--fontColorLight);
+  @include text(var(--fontSmall), normal);
 }
 
 .form_button {
@@ -62,4 +106,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  @include tablet {
+    align-self: flex-end;
+    width: 206px;
+  }
+  @include desktop {
+    width: 278px;
+  }
 }

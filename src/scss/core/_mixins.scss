@@ -24,3 +24,8 @@
   padding: 2px 0px;
   @content;
 }
+
+@mixin text($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
