@@ -2,7 +2,7 @@
   width: 100%;
   background-color: var(--brandBackgroundColor);
   padding-bottom: 45px;
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding-bottom: 60px;
   }
 }
@@ -10,6 +10,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   @include tablet {
     flex-direction: row;
   }
@@ -25,23 +26,10 @@
   }
 
   &__strengths {
-    @media all and (min-width: 768px) {
-      width: 50%;
-      &--one {
-        padding-right: 17px;
-      }
-      &--two {
-        padding-left: 17px;
-      }
+    @include tablet {
+      width: 46%;
     }
-    @media all and (min-width: 1200px) {
-      &--one {
-        padding-right: 27px;
-      }
-      &--two {
-        padding-left: 27px;
-      }
-    }
+
     &--title {
       @include title {
         color: var(--brandColorDark);
@@ -49,12 +37,11 @@
         padding-top: 30px;
       }
 
-      @media all and (min-width: 768px) {
+      @include tablet {
         padding: 45px 0 15px 0;
       }
     }
     &--text {
-      font-family: var(--mainFont);
       font-size: var(--fontMainText);
       color: var(--fontColorDark);
       text-align: center;

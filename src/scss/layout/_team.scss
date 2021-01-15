@@ -9,10 +9,10 @@
   background-color: white;
   justify-content: center;
   padding-bottom: 15px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 30px;
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     padding: 0 161px 45px 161px;
     margin-bottom: 0;
   }
@@ -23,7 +23,7 @@
       font-size: var(--fontTitle);
       scroll-margin-top: 120px;
     }
-    @media all and (min-width: 768px) {
+    @include tablet {
       color: var(--brandColorDark);
       scroll-margin-top: 100px;
     }
@@ -31,12 +31,11 @@
   &__text {
     justify-content: center;
     width: 100%;
-    font-family: var(--mainFont);
     font-size: var(--fontMainText);
     letter-spacing: normal;
     text-align: center;
     padding: 15px 0;
-    @media all and (min-width: 768px) {
+    @include tablet {
       opacity: 67%;
     }
     &--dev {
