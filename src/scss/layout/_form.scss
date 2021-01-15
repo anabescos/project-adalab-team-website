@@ -39,17 +39,21 @@
 
 .input__wrapper {
   width: 100%;
-  &--email {
-    @include desktop {
-      align-self: flex-start;
-      width: 75%;
-    }
+  justify-content: space-between;
+}
+.display {
+  display: inline;
+}
+.email {
+  @include desktop {
+    align-self: flex-start;
+    width: 70%;
   }
-  &--phone {
-    @include desktop {
-      align-self: flex-end;
-      width: 25%;
-    }
+}
+.phone {
+  @include desktop {
+    align-self: flex-end;
+    width: 25%;
   }
 }
 
