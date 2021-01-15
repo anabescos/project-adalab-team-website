@@ -21,7 +21,7 @@
   text-align: center;
   font-weight: 500;
   font-family: $secondaryFont;
-  @include text($fontTitle, 1.88);
+  @include text(rem(24), 1.88);
   @content;
 }
 

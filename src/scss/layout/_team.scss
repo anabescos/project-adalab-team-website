@@ -29,7 +29,7 @@
   &__text {
     justify-content: center;
     width: 100%;
-    @include text($fontMainText, 1.5);
+    @include text(rem(16), 1.5);
     text-align: center;
     padding: rem(15) 0;
     @include tablet {

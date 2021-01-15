@@ -1,9 +1,9 @@
 .sContainer {
   width: 100%;
-  background-color: var(--brandBackgroundColor);
-  padding-bottom: 45px;
+  background-color: $brandBackgroundColor;
+  padding-bottom: rem(45);
   @include desktop {
-    padding-bottom: 60px;
+    padding-bottom: rem(60);
   }
 }
 .strengthsWeak {
@@ -18,34 +18,33 @@
     box-sizing: border-box;
     position: absolute;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 30px;
-    height: 30px;
+    width: rem(30);
+    height: rem(30);
     left: 50%;
     padding-top: 0;
     background-color: white;
   }
 
   &__strengths {
+    text-align: center;
     @include tablet {
       width: 46%;
     }
 
     &--title {
       @include title {
-        color: var(--brandColorDark);
-        font-size: var(--fontSubtitle);
-        padding-top: 30px;
+        color: $brandColorDark;
+        @include text(rem(22), 2.05);
+        padding-top: rem(30);
       }
 
       @include tablet {
-        padding: 45px 0 15px 0;
+        padding: rem(45) 0 rem(15) 0;
       }
     }
     &--text {
-      font-size: var(--fontMainText);
-      color: var(--fontColorDark);
-      text-align: center;
-      line-height: 1.5;
+      @include text(rem(16), 1.5);
+      color: $fontColorDark;
     }
   }
 }
