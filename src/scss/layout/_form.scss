@@ -1,16 +1,12 @@
 .contactContainer {
   margin: 0 rem(15);
   @include tablet {
-    margin: 0 rem(163);
+    margin: 0 auto;
+    max-width: rem(442);
   }
   @include desktop {
-    margin: 0 rem(299);
+    max-width: rem(601);
   }
-  // check with large screen
-  // @media all and (min-width: 1476px) {
-  //   margin: 0 auto;
-  //   max-width: rem(1200);
-  // }
 }
 
 .contact__small {
@@ -31,29 +27,25 @@
 
 .form__wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   margin-top: rem(58);
 }
 
 .input__wrapper {
   width: 100%;
-  justify-content: space-between;
 }
-.display {
-  display: inline-flex;
-}
+
 .email {
   @include desktop {
-    align-self: flex-start;
-    width: 70%;
+    width: rem(395);
+    display: inline-block;
+    margin-right: rem(39);
   }
 }
 .phone {
   @include desktop {
-    align-self: flex-end;
-    width: 25%;
+    width: rem(162);
+    display: inline-block;
   }
 }
 
@@ -69,9 +61,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  // @include tablet {
-  //   width: rem(442);
-  // }
   &--textarea {
     height: rem(105);
   }
@@ -84,9 +73,7 @@
   width: rem(131);
   height: rem(19);
   margin: rem(58) rem(159) rem(7) 0;
-  /*font-family: OpenSans;*/
   @include text(rem(14), 1);
-  // font-weight: normal;
   color: $fontColorDark;
 }
 
@@ -96,25 +83,25 @@
 }
 
 .form_button {
-  width: rem(290);
+  width: 100%;
   height: rem(45);
   margin: rem(30) 0 rem(60) 0;
-  /* padding: rem(11) rem(158) rem(12) rem(74); */
   border-radius: rem(4);
   border: none;
   background-color: $brandColorDark;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  /* font-family: Rubik; */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   @include tablet {
-    align-self: flex-end;
+    display: inline-block;
+    margin-left: rem(236);
     width: rem(206);
   }
   @include desktop {
     width: rem(278);
+    margin-left: rem(323);
   }
 }
