@@ -1,19 +1,17 @@
-:root {
-  font-size: 16px;
+$defaultFontSize: 16;
 
-  /* colors */
-  $brandColorDark: #099d8d;
-  $brandColorLight: #14d9c4;
-  $fontColorDark: #54585a;
-  $fontColorLight: #b8b8b9;
-  $brandBackgroundColor: #f1f1f1;
+/* colors */
+$brandColorDark: #099d8d;
+$brandColorLight: #14d9c4;
+$fontColorDark: #54585a;
+$fontColorLight: #b8b8b9;
+$brandBackgroundColor: #f1f1f1;
 
-  /* fonts */
-  $secondaryFont: "Rubik", sans-serif;
+/* fonts */
+$secondaryFont: "Rubik", sans-serif;
 
-  /* font-size: */
-  $fontSmall: 0.875rem;
-  $fontMainText: 1rem;
-  $fontTitle: 1.5rem;
-  $fontSubtitle: 1.375rem;
-}
+/* font-size: */
+$fontSmall: rem(14);
+$fontMainText: rem(16);
+$fontTitle: rem(24);
+$fontSubtitle: rem(22);
