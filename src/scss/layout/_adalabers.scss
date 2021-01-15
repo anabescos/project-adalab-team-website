@@ -13,65 +13,71 @@
     }
   }
   &__adalaber {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 190px 1fr;
+    row-gap: 15px;
+    grid-template-areas: "pic" "data";
+    align-items: start;
     text-align: center;
     font-family: var(--mainFont);
     font-size: var(--fontMainText);
+    margin-bottom: 60px;
     @media all and (min-width: 768px) {
-      flex-direction: row;
-      align-items: flex-start;
+      row-gap: 0;
       &--alignLeft {
         text-align: left;
+        grid-template-columns: 286px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "pic data";
+        column-gap: 30px;
       }
       &--alignRight {
         text-align: right;
-        flex-direction: row-reverse;
+        grid-template-columns: 1fr 286px;
+        grid-template-rows: 1fr;
+        grid-template-areas: "data pic";
+        column-gap: 30px;
       }
     }
   }
   .picWrapper {
+    grid-area: pic;
     box-sizing: content-box;
+    background-size: contain;
+  }
+  .picWrapper__pic {
+    min-width: 180px;
     border: 4px solid #eaeaea;
     border-radius: 4px;
-    background-size: contain;
+    align-self: center;
     @media all and (min-width: 768px) {
-      width: 25%;
-      max-width: 278px;
-    }
-    &__pic {
-      width: 100%;
-      min-width: 180px;
-      max-width: 278px;
-      display: block;
-
-      @media all and (min-width: 768px) {
-        display: none;
-      }
-    }
-    &__bigPic {
       display: none;
+    }
+  }
+  .picWrapper__bigPic {
+    display: none;
+
+    @media all and (min-width: 768px) {
+      display: block;
+      border: 4px solid #eaeaea;
+      border-radius: 4px;
+      align-self: center;
       @media all and (min-width: 768px) {
-        display: block;
-        width: 100%;
         max-width: 278px;
       }
     }
   }
   .adalaberData {
-    flex-wrap: wrap;
-    margin: 0 0 25px 20px;
+    grid-area: data;
     @media all and (min-width: 768px) {
-      width: 75%;
-      padding: 0 20px 35px;
     }
     &__name {
       font-family: var(--mainFont);
       font-size: 20px;
       font-weight: 300;
       color: black;
-      margin: 15px;
+      margin-bottom: 15px;
       @media all and (min-width: 768px) {
         display: inline-block;
         margin: 0 0 15px 0;
@@ -79,6 +85,7 @@
     }
     &__rrssAdalaber {
       display: inline;
+      color: var(--brandColorDark);
       &--rrss {
         padding: 15px 5px 0 0;
         color: var(--brandColorDark);
