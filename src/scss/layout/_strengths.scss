@@ -10,7 +10,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  @media all and (min-width: 768px) {
+  @include tablet {
     flex-direction: row;
   }
   &__square {
