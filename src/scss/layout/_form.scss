@@ -1,26 +1,26 @@
 .contactContainer {
-  margin: 0 15px;
+  margin: 0 rem(15);
   @include tablet {
-    margin: 0px 163px;
+    margin: 0 rem(163);
   }
   @include desktop {
-    margin: 0px 299px;
+    margin: 0 rem(299);
   }
   // check with large screen
   // @media all and (min-width: 1476px) {
-  //   margin: 0px auto;
-  //   max-width: 1200px;
+  //   margin: 0 auto;
+  //   max-width: rem(1200);
   // }
 }
 
 .contact__small {
-  @include text(12px, 1.5);
-  color: var(--fontColorDark);
+  @include text(rem(12), 1.5);
+  color: $fontColorDark;
   display: block;
   text-align: center;
 }
 .asterisk {
-  color: var(--brandColorLight);
+  color: $brandColorLight;
 }
 .world {
   text-transform: capitalize;
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3.625rem;
+  margin-top: rem(58);
 }
 
 .input__wrapper {
@@ -55,50 +55,50 @@
 
 .signup {
   display: block;
-  color: var(--fontColorDark);
-  @include text(var(--fontMainText), normal);
+  color: $fontColorDark;
+  @include text(rem(16), 1);
   width: 100%;
-  height: 45px;
-  margin: 7px 0 13px;
-  padding: 7px 15px;
-  border: solid 1px var(--fontColorLight);
+  height: rem(45);
+  margin: rem(7) 0 rem(13);
+  padding: rem(7) rem(15);
+  border: solid rem(1) $fontColorLight;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   // @include tablet {
-  //   width: 442px;
+  //   width: rem(442);
   // }
   &--textarea {
-    height: 105px;
+    height: rem(105);
   }
 }
 .required::after {
   content: " *";
-  color: var(--brandColorLight);
+  color: $brandColorLight;
 }
 .label {
-  width: 131px;
-  height: 19px;
-  margin: 58px 159px 7px 0;
+  width: rem(131);
+  height: rem(19);
+  margin: rem(58) rem(159) rem(7) 0;
   /*font-family: OpenSans;*/
-  @include text(var(--fontSmall), normal);
+  @include text(rem(14), 1);
   // font-weight: normal;
-  color: var(--fontColorDark);
+  color: $fontColorDark;
 }
 
 .placeholder::placeholder {
-  color: var(--fontColorLight);
-  @include text(var(--fontSmall), normal);
+  color: $fontColorLight;
+  @include text(rem(14), 1);
 }
 
 .form_button {
-  width: 290px;
-  height: 45px;
-  margin: 30px 0 60px 0;
-  /* padding: 11px 158px 12px 74px; */
-  border-radius: 4px;
+  width: rem(290);
+  height: rem(45);
+  margin: rem(30) 0 rem(60) 0;
+  /* padding: rem(11) rem(158) rem(12) rem(74); */
+  border-radius: rem(4);
   border: none;
-  background-color: var(--brandColorDark);
+  background-color: $brandColorDark;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -108,9 +108,9 @@
   appearance: none;
   @include tablet {
     align-self: flex-end;
-    width: 206px;
+    width: rem(206);
   }
   @include desktop {
-    width: 278px;
+    width: rem(278);
   }
 }

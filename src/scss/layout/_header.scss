@@ -2,69 +2,66 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  height: 105px;
+  height: rem(105);
   background-image: linear-gradient(
-    rgba(9, 157, 141, 0.95) 60px,
-    rgba(20, 217, 196, 0.9) 60px
+    rgba(9, 157, 141, 0.95) rem(60),
+    rgba(20, 217, 196, 0.9) rem(60)
   );
-  @media all and (min-width: 768px) {
-    height: 60px;
+  @include tablet {
+    height: rem(60);
     background-image: none;
-    background-color: #099d8d;
+    background-color: $brandColorDark;
     opacity: 0.95;
   }
   &__logo {
-    height: 60px;
+    height: rem(60);
     display: flex;
     justify-content: center;
     align-items: center;
     &--text {
-      width: 160px;
-      font-family: var(--secondaryFont);
-      font-size: 16px;
+      width: rem(160);
+      font-family: $secondaryFont;
+      @include text(rem(16), 1.88);
       font-weight: 500;
       color: white;
-      line-height: 1.88;
       text-align: center;
-      // text-transform: uppercase;
-      @media all and (min-width: 768px) {
+      @include tablet {
         text-align: start;
       }
     }
   }
   &__tablet {
-    @media all and (min-width: 768px) {
+    @include tablet {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
   }
   .menu {
-    height: 45px;
+    height: rem(45);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media all and (min-width: 768px) {
-      height: 60px;
+    @include tablet {
+      height: rem(60);
       justify-content: right;
     }
     &__link {
       @include menuLink;
-      font-family: var(--secondaryFont);
+      font-family: $secondaryFont;
       color: white;
-      font-size: 15px;
+      @include text(rem(15), 2);
       font-weight: 500;
-      line-height: 2;
-      @media all and (min-width: 768px) {
-        padding-left: 18px;
+      @include tablet {
+        padding-left: rem(18);
       }
       &:hover {
-        color: var(--fontColorDark);
+        color: $fontColorDark;
       }
     }
   }
 }
 
 .header__logo .menu__link:first-child {
-  padding-left: 0px;
+  padding-left: 0;
 }

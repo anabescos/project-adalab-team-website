@@ -1,10 +1,4 @@
-@mixin title {
-  text-align: center;
-  font-weight: 500;
-  font-family: var(--secondaryFont);
-  line-height: 45px;
-  @content;
-}
+// media queries
 
 @mixin tablet {
   @media all and (min-width: 768px) {
@@ -18,14 +12,22 @@
   }
 }
 
+@mixin text($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin title {
+  text-align: center;
+  font-weight: 500;
+  font-family: $secondaryFont;
+  @include text(rem(24), 1.88);
+  @content;
+}
+
 @mixin menuLink {
   text-decoration: none;
   text-transform: uppercase;
   padding: 2px 0px;
   @content;
-}
-
-@mixin text($fontSize, $lineHeight) {
-  font-size: $fontSize;
-  line-height: $lineHeight;
 }

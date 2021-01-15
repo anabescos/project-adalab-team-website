@@ -1,7 +1,8 @@
-@import "core/reset";
 @import "core/variables";
+@import "core/functions";
 @import "core/mixins";
-@import "components/generic";
+@import "core/reset";
+@import "pages/page";
 @import "layout/header";
 @import "layout/hero";
 @import "layout/team";

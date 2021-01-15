@@ -1,64 +1,50 @@
 .sContainer {
   width: 100%;
-  background-color: var(--brandBackgroundColor);
-  padding-bottom: 45px;
-  @media all and (min-width: 1200px) {
-    padding-bottom: 60px;
+  background-color: $brandBackgroundColor;
+  padding-bottom: rem(45);
+  @include desktop {
+    padding-bottom: rem(60);
   }
 }
 .strengthsWeak {
   position: relative;
   display: flex;
   flex-direction: column;
-  @media all and (min-width: 768px) {
+  justify-content: space-between;
+  @include tablet {
     flex-direction: row;
   }
   &__square {
     box-sizing: border-box;
     position: absolute;
     transform: translate(-50%, -50%) rotate(45deg);
-    width: 30px;
-    height: 30px;
+    width: rem(30);
+    height: rem(30);
     left: 50%;
     padding-top: 0;
     background-color: white;
   }
 
   &__strengths {
-    @media all and (min-width: 768px) {
-      width: 50%;
-      &--one {
-        padding-right: 17px;
-      }
-      &--two {
-        padding-left: 17px;
-      }
+    text-align: center;
+    @include tablet {
+      width: 46%;
     }
-    @media all and (min-width: 1200px) {
-      &--one {
-        padding-right: 27px;
-      }
-      &--two {
-        padding-left: 27px;
-      }
-    }
+
     &--title {
       @include title {
-        color: var(--brandColorDark);
-        font-size: var(--fontSubtitle);
-        padding-top: 30px;
+        color: $brandColorDark;
+        @include text(rem(22), 2.05);
+        padding-top: rem(30);
       }
 
-      @media all and (min-width: 768px) {
-        padding: 45px 0 15px 0;
+      @include tablet {
+        padding: rem(45) 0 rem(15) 0;
       }
     }
     &--text {
-      font-family: var(--mainFont);
-      font-size: var(--fontMainText);
-      color: var(--fontColorDark);
-      text-align: center;
-      line-height: 1.5;
+      @include text(rem(16), 1.5);
+      color: $fontColorDark;
     }
   }
 }
