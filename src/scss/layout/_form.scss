@@ -27,7 +27,6 @@
 
 .form__wrapper {
   width: 100%;
-  justify-content: space-between;
   margin-top: rem(58);
 }
 
@@ -89,12 +88,20 @@
   border-radius: rem(4);
   border: none;
   background-color: $brandColorDark;
+  border: rem(2) solid $brandColorDark;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $brandColorDark;
+    cursor: pointer;
+  }
+
   @include tablet {
     display: inline-block;
     margin-left: rem(236);
