@@ -31,3 +31,10 @@
   padding: 2px 0px;
   @content;
 }
+
+@mixin photoBorder {
+  border: rem(4) solid $photoBorderColor;
+  border-radius: rem(4);
+  align-self: center;
+  animation: 4s photoAnimation infinite;
+}

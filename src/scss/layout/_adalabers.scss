@@ -45,11 +45,10 @@
     box-sizing: content-box;
     background-size: contain;
   }
+
   .picWrapper__pic {
     min-width: rem(180);
-    border: rem(4) solid #eaeaea;
-    border-radius: rem(4);
-    align-self: center;
+    @include photoBorder;
     @include tablet {
       display: none;
     }
@@ -58,13 +57,20 @@
     display: none;
 
     @include tablet {
+      max-width: rem(278);
       display: block;
-      border: rem(4) solid #eaeaea;
-      border-radius: rem(4);
-      align-self: center;
-      @include tablet {
-        max-width: rem(278);
-      }
+      @include photoBorder;
+    }
+  }
+  @keyframes photoAnimation {
+    from {
+      border-color: $photoBorderColor;
+    }
+    50% {
+      border-color: $brandColorLight;
+    }
+    to {
+      border-color: $photoBorderColor;
     }
   }
   .adalaberData {
