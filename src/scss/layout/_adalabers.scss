@@ -45,6 +45,7 @@
     box-sizing: content-box;
     background-size: contain;
   }
+
   .picWrapper__pic {
     min-width: rem(180);
     @include photoBorder;
@@ -56,11 +57,20 @@
     display: none;
 
     @include tablet {
+      max-width: rem(278);
       display: block;
       @include photoBorder;
-      @include tablet {
-        max-width: rem(278);
-      }
+    }
+  }
+  @keyframes photoAnimation {
+    from {
+      border-color: $photoBorderColor;
+    }
+    50% {
+      border-color: $brandColorLight;
+    }
+    to {
+      border-color: $photoBorderColor;
     }
   }
   .adalaberData {

@@ -33,7 +33,8 @@
 }
 
 @mixin photoBorder {
-  border: rem(4) solid #eaeaea;
+  border: rem(4) solid $photoBorderColor;
   border-radius: rem(4);
   align-self: center;
+  animation: 4s photoAnimation infinite;
 }
