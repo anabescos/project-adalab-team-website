@@ -1,39 +1,23 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+Este es el proyecto de DEVROCKETS, el equipo 1 del módulo 1 del curso de front-ender de Adalab. El objetivo es crear una página web a partir de un enunciado dado, aplicando los conocimientos adquiridos durante este módulo del curso, que son los siguientes: 
+Maquetación: HTML5, CSS3, Flexbox, CSS Grid, SASS, Bootstrap. Considerando añadir animaciones, transiciones, ramas en GitHub, formularios y aportaciones extra autorizadas por el Product Owner.
+                        
+En este proyecto hay 3 tipos de ficheros y carpetas:
+•	Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json. Son la configuración del proyecto y no he necesitado modificarlos.
+•	La carpeta src/: son los ficheros de mi ejercicio, como HTML, CSS, JS...
+•	Las carpetas public/ y docs/, se han generado automáticamente cuando al arrancar el proyecto. El Kit lee los ficheros que hay dentro de src/, los procesa y los genera dentro de public/ y docs/.
 
-# Adalab web starter kit
+Además hemos añadido transiciones y algún pequeño cambio autorizado por el Product Owner.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-## Guía de inicio rápido
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
 
-```bash
-npm install
-```
-
-### Pasos para arrancar el proyecto:
-
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+[Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
 
 ```bash
 npm start
@@ -108,17 +92,7 @@ src
  |  ├─ layout
  |  └─ pages
  └─ html
-    └─ partials
+    └─ partials]
 ```
 
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+]]]]]]]]]]
