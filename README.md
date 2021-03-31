@@ -1,7 +1,7 @@
 # DEVROCKETS
 ## Proyecto del módulo 1 del bootcamp de Adalab.
 
-Este es el proyecto de DEVROCKETS, el equipo 1 del módulo 1 del curso de front-end de Adalab. El objetivo es crear una página web a partir de un enunciado dado, aplicando los conocimientos adquiridos durante este módulo del curso, que son los siguientes: 
+Este es el proyecto de DEVROCKETS, el equipo 1 del módulo 1 del curso de front-end de Adalab.  el equipo 1 del módulo 1 del curso de front-end de Adalab formado por mi, Ana Bescós, junto a mis compañeras [Ana Apezteguía](https://github.com/anaapezteguia), Sagra Mielgo y Marcjanna Stopinska. El objetivo es crear una página web a partir de un enunciado dado, aplicando los conocimientos adquiridos durante este módulo del curso, que son los siguientes: 
 Maquetación: HTML5, CSS3, Flexbox, CSS Grid, SASS.
                         
 En este proyecto hay 3 tipos de ficheros y carpetas:
