@@ -1,7 +1,7 @@
 # DEVROCKETS
 
 
-This is the DEVROCKETS project, develop for Adalab web development course, by [Ana Apezteguía](https://github.com/anaapezteguia), [Sagra Mielgo](https://github.com/sagramielgo) and [Marcjanna Stopinska](https://github.com/marcjnn) and myself, Ana Bescós. The objective was to create a web page, from a given design, applying the knowledge acquired during this module of the course, which are the following: 
+This is the DEVROCKETS project, develop for Adalab web development course, by [Ana Apezteguía](https://github.com/anaapezteguia), [Sagra Mielgo](https://github.com/sagramielgo), [Marcjanna Stopinska](https://github.com/marcjnn) and myself, Ana Bescós. The objective was to create a web page, from a given design, applying the knowledge acquired during this module of the course, which are the following: 
 Layout: HTML5, CSS3, Flexbox, CSS Grid, SASS.
 
 We have also added transitions and some small changes authorised by the Product Owner.
